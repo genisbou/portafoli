@@ -12,9 +12,7 @@ const Footer = () => {
                             customers
                             worldwide.</p>
                         <div className="social-links">
-                            <a href="#" className="social-link"><i className="fab fa-twitter"></i></a>
-                            <a href="#" className="social-link"><i className="fab fa-facebook"></i></a>
-                            <a href="#" className="social-link"><i className="fab fa-instagram"></i></a>
+                           <a href="#" className="social-link"><i className="fab fa-github"></i></a>
                             <a href="#" className="social-link"><i className="fab fa-linkedin"></i></a>
                         </div>
                     </div>
@@ -24,7 +22,7 @@ const Footer = () => {
                             <li><a href="#">Inici</a></li>
                             <li><a href="#">Sobre mi</a></li>
                             <li><a href="#">Contacte</a></li>
-                            
+
                         </ul>
                     </div>
                 </div>
