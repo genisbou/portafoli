@@ -15,7 +15,7 @@ const NavigationBar = () => {
 
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                         <li className="nav-item">
-                            <a className="nav-link active" aria-current="page" href="#">INICI</a>
+                            <a className="nav-link active" aria-current="page" href="inici">INICI</a>
                         </li>
                         <li className="nav-item">
                             <a className="nav-link" href="#">SOBRE MI</a>
