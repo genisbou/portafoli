@@ -9,12 +9,14 @@ import {
 import Component from "./Components/Header";
 import Footer from "./Components/Footer";
 import Inici from "./Pages/Inici";
+import Contacte from "./Pages/Contacte";
 
 function App() {
   return (
       <Router>
                 <Routes>
                     <Route exact path="/inici" element={<Inici />} />
+                    <Route exact path="/contacte" element={<Contacte />} />
                 </Routes>
       </Router>
 

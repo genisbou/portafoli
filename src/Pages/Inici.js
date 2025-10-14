@@ -10,8 +10,17 @@ const Inici = () => {
 
             <div className="container">
                 <p>Hola món</p>
+                <a type="button" class="btn btn-primary"
+                    href="/Genis-CV-es.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+
+                >
+                    Descarrega el meu CV
+                </a>
+
             </div>
-            
+
             <Footer/>
 
         </>
