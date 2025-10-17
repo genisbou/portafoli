@@ -5,7 +5,8 @@ import Footer from '../Components/Footer';
 import img1 from '../assets/banner-software.jpg';
 import img2 from '../assets/inici-fcalpicat.png';
 import img3 from '../assets/PHP-logo.svg.png';
-import img3 from '../assets/PHP-logo.svg.png';
+import img4 from '../assets/CodeIgniter.png';
+import img5 from '../assets/mysql.png';
 
 
 
@@ -78,6 +79,8 @@ const Inici = () => {
 
                         </p>
                         <img className="img-fluid logo-php" src={img3} alt="Imagen de Japón"/>
+                        <img className="img-fluid logo-php" src={img4} alt="Imagen de Japón"/>
+                        <img className="img-fluid logo-php" src={img5} alt="Imagen de Japón"/>
 
                         <p></p>
                         <a href="https://github.com/AndreyPlakhov/Proyecto-Ci4" className="btn btn-outline-secondary">
