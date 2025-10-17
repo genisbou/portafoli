@@ -9,6 +9,9 @@
     height: 280px;
     object-fit: cover;
 }
+.logo-php {
+    max-width: 100px;
+}
 
 .footer {
     background: #f8f9fa;
