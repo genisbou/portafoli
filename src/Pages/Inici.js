@@ -8,6 +8,11 @@ import img3 from '../assets/PHP-logo.svg.png';
 import img4 from '../assets/CodeIgniter.png';
 import img5 from '../assets/mysql.png';
 
+import img6 from '../assets/orderTicket-JaVA.png';
+import img7 from '../assets/icon-java.png';
+import img8 from '../assets/maven.svg';
+
+
 
 
 
@@ -62,10 +67,10 @@ const Inici = () => {
                     Projectes
                 </h3>
 
-                <div className="card" >
-                    <img  src={img2} alt="Imagen de Japón"/>
+                <div className="card">
+                    <img src={img2} alt="Imagen de Japón"/>
                     <div className="card-body">
-                        <h5 className="card-title">Club Futbol Alpicat</h5>
+                        <h5 className="card-title">Club Futbol Alpicat (Projecte Real)</h5>
                         <p className="card-text">
                             Aplicació web desenvolupada amb PHP i el framework CodeIgniter 4, amb una base de dades
                             MySQL. El projecte permet als usuaris de qualsevol edat accedir fàcilment a tota la
@@ -103,10 +108,52 @@ const Inici = () => {
 
 
                     </div>
+
+
+
+                </div>
+
+                <p></p>
+
+
+                <div className="card">
+                    <img src={img6}  style= {{ width: '50%' }} alt="Imagen de Japón"/>
+                    <div className="card-body">
+                        <h5 className="card-title">Gestor de tiquets de compra en Java</h5>
+                        <p className="card-text">
+                            Aplicació de consola en Java amb Maven que permet gestionar un tiquet de compra.
+                            L’usuari pot afegir productes, consultar el tiquet complet, visualitzar el preu
+                            total i accedir a cada línia de comanda mitjançant el seu índex. El projecte inclou
+                            constructors, mètodes (getters, setters, equals, hashCode, toString) i control de
+                            límits en l’array per evitar afegir més de 10 línies.
+
+
+                        </p>
+
+
+                        <img className="img-fluid logo-php" src={img7} alt="Imagen de Japón"/>
+                        <img className="img-fluid logo-php" src={img8} alt="Imagen de Japón"/>
+
+                        <p></p>
+                        <a href="https://github.com/AndreyPlakhov/Proyecto-Ci4" className="btn btn-outline-secondary">
+                            <i className=" bi bi-code-slash"></i>
+                            &nbsp; Codi font</a>
+
+                        <p>
+
+                        </p>
+
+
+
+
+                    </div>
+
+
                 </div>
 
 
             </div>
+
 
             <Footer/>
 
