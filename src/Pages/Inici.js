@@ -29,7 +29,7 @@ const Inici = () => {
             <div className="container">
                 <div className="inici">
 
-                    <h1>Benvingut al meu portafoli</h1>
+                    <h3>Benvingut al meu portafoli</h3>
                     <p>
                         Sóc Genís, tècnic de sistemes i operari especialitzat en paletització i maquinària
                         automatitzada. Amb experiència en el sector logístic i formació en desenvolupament web, combino
