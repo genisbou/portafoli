@@ -12,6 +12,9 @@ import img6 from '../assets/orderTicket-JaVA.png';
 import img7 from '../assets/icon-java.png';
 import img8 from '../assets/maven.svg';
 
+import img9 from '../assets/dawguardia-admin.png';
+import img10 from '../assets/boostrap-logo.png';
+
 
 
 
@@ -55,12 +58,23 @@ const Inici = () => {
                 </h3>
 
                 <ul className="list-group list-group-flush">
-                    <li className="list-group-item">An item</li>
-                    <li className="list-group-item">A second item</li>
-                    <li className="list-group-item">A third item</li>
-                    <li className="list-group-item">A fourth item</li>
-                    <li className="list-group-item">And a fifth one</li>
+                    <li className="list-group-item">
+                        <strong>Programador en TorresEnergia</strong> (10/2024 - 03/2025, Torres de Segre)<br/>
+                        Actualització de la pàgina web, automatitzacions amb Visual Basic a Excel i mapejat de la xarxa
+                        interna.
+                    </li>
+                    <li className="list-group-item">
+                        <strong>Tècnic informàtic a Institut Caparrella</strong> (06/2023 - 12/2023, Lleida)<br/>
+                        Manteniment i reparació d’equips, instal·lació i configuració de sistemes operatius, gestió de
+                        programari i còpies de seguretat.
+                    </li>
+                    <li className="list-group-item">
+                        <strong>Tècnic informàtic a Natural Optics Group</strong> (02/2021 - 05/2021, Torrefarrera)<br/>
+                        Manteniment d’equips, instal·lació de sistemes operatius i programari, assegurant el bon
+                        funcionament dels dispositius.
+                    </li>
                 </ul>
+
                 <p></p>
                 <h3>
                     <i className="bi bi-file-earmark-code"></i>
@@ -110,14 +124,13 @@ const Inici = () => {
                     </div>
 
 
-
                 </div>
 
                 <p></p>
 
 
                 <div className="card">
-                    <img src={img6}  style= {{ width: '50%' }} alt="Imagen de Japón"/>
+                    <img src={img6} style={{width: '50%'}} alt="Imagen de Japón"/>
                     <div className="card-body">
                         <h5 className="card-title">Gestor de tiquets de compra en Java</h5>
                         <p className="card-text">
@@ -135,7 +148,7 @@ const Inici = () => {
                         <img className="img-fluid logo-php" src={img8} alt="Imagen de Japón"/>
 
                         <p></p>
-                        <a href="https://github.com/AndreyPlakhov/Proyecto-Ci4" className="btn btn-outline-secondary">
+                        <a href="https://github.com/genisbou/Gestor-Tiquets" className="btn btn-outline-secondary">
                             <i className=" bi bi-code-slash"></i>
                             &nbsp; Codi font</a>
 
@@ -144,13 +157,78 @@ const Inici = () => {
                         </p>
 
 
+                    </div>
+
+
+                </div>
+
+                <p></p>
+
+                <div className="card">
+                    <img src={img9} style={{width: '75%'}} alt="Imagen de Japón"/>
+                    <div className="card-body">
+                        <h5 className="card-title"> DAWGuarida — Gestor de Notícies</h5>
+                        <p className="card-text">
+                            DawGuardia és una aplicació web desenvolupada amb CodeIgniter 4 que simula el funcionament
+                            d’un diari digital d’última generació.
+                            L’aplicació implementa un sistema de rols complet amb Administrador, Editor, Periodista,
+                            Subscriptor i Visitant, cadascun amb permisos específics.
+                            Les funcionalitats principals són :
+
+                        </p>
+
+                        <ol className="list-group list-group-numbered">
+                            <li className="list-group-item"><i class="bi bi-newspaper"></i> Gestió de notícies per part
+                                de periodistes, amb validació
+                                prèvia dels editors.
+                            </li>
+                            <li className="list-group-item"> <i class="bi bi-newspaper"></i> Classificació per seccions
+                                (local, esports, societat,
+                                opinió, etc.).
+                            </li>
+                            <li className="list-group-item"><i className="bi bi-chat-left"></i> Sistema de comentaris:
+                                els visitants poden comentar, però
+                                els comentaris s’han de validar; els subscriptors poden fer-ho lliurement.
+                            </li>
+                            <li className="list-group-item"><i className="bi bi-lock"></i> Notícies exclusives per a
+                                subscriptors.
+                            </li>
+                            <li className="list-group-item"><i class="bi bi-credit-card"></i> Gestió de subscripcions: alta, validació i desactivació
+                                d’usuaris per impagament.
+                            </li>
+                            <li className="list-group-item"><i class="bi bi-gear"></i> Panell administratiu complet per controlar usuaris, rols,
+                                seccions i publicacions.
+                            </li>
+                            <li className="list-group-item"> <i class="bi bi-globe"></i> Compartició de notícies mitjançant enllaços públics del
+                                tipus :
+                                <em> https://localhost/noticia/seccio/el-titular-de-la-noticia. </em>
+                            </li>
+                        </ol>
+                        <p></p>
+                        <p>
+                            El projecte aplica el patró MVC amb CodeIgniter i gestió de base de dades amb MySQL.
+                        </p>
+
+
+                        <img className="img-fluid logo-php" src={img3} alt="Imagen de Japón"/>
+                        <img className="img-fluid logo-php" src={img4} alt="Imagen de Japón"/>
+                        <img className="img-fluid logo-php" src={img5} alt="Imagen de Japón"/>
+
+
+                        <p></p>
+                        <a href="https://github.com/genisbou/daw2ci4-25-genis" className="btn btn-outline-secondary">
+                            <i className=" bi bi-code-slash"></i>
+                            &nbsp; Codi font</a>
+
+                        <p>
+
+                        </p>
 
 
                     </div>
 
 
                 </div>
-
 
             </div>
 
