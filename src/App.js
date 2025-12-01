@@ -16,6 +16,7 @@ function App() {
   return (
       <Router>
                 <Routes>
+                    <Route exact path="" element={<Inici />} />
                     <Route exact path="/inici" element={<Inici />} />
                     <Route exact path="/contacte" element={<Contacte />} />
                     <Route exact path="/sobre-mi" element={<SobreMi />} />

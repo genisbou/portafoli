@@ -59,17 +59,17 @@ const Inici = () => {
 
                 <ul className="list-group list-group-flush">
                     <li className="list-group-item">
-                        <strong>Programador en TorresEnergia</strong> (10/2024 - 03/2025, Torres de Segre)<br/>
+                        <strong>Programador en TorresEnergia - Contracte de pràctiques</strong> (10/2024 - 03/2025, Torres de Segre)<br/>
                         Actualització de la pàgina web, automatitzacions amb Visual Basic a Excel i mapejat de la xarxa
                         interna.
                     </li>
                     <li className="list-group-item">
-                        <strong>Tècnic informàtic a Institut Caparrella</strong> (06/2023 - 12/2023, Lleida)<br/>
+                        <strong>Tècnic informàtic a Institut Caparrell - Contracte de pràctiquesa</strong> (06/2023 - 12/2023, Lleida)<br/>
                         Manteniment i reparació d’equips, instal·lació i configuració de sistemes operatius, gestió de
                         programari i còpies de seguretat.
                     </li>
                     <li className="list-group-item">
-                        <strong>Tècnic informàtic a Natural Optics Group</strong> (02/2021 - 05/2021, Torrefarrera)<br/>
+                        <strong>Tècnic informàtic a Natural Optics Group - Contracte de pràctiques</strong> (02/2021 - 05/2021, Torrefarrera)<br/>
                         Manteniment d’equips, instal·lació de sistemes operatius i programari, assegurant el bon
                         funcionament dels dispositius.
                     </li>
