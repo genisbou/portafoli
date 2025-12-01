@@ -33,6 +33,22 @@ const Inici = () => {
                                     <i className="bi bi-geo-alt me-2"></i>
                                         Alcarràs, Lleida
                                     </li>
+                                    <li className="list-group-item">
+                                        <i className="bi bi-linkedin"></i>
+                                        <a href="https://www.linkedin.com/in/gen%C3%ADs-bou-maj%C3%B3s/" style={{textDecoration: "none"}}>&nbsp;Veure Perfil</a>
+                                    </li>
+                                    <li className="list-group-item">
+                                        <i className="bi bi-github"></i>
+                                        <a href="https://github.com/genisbou" style={{textDecoration: "none"}}>&nbsp;Veure Perfil</a>
+
+                                    </li>
+
+                                    <li className="list-group-item">
+                                        <i className="bi bi-filetype-pdf"></i>
+                                        <a href="/Genis-CV-es.pdf" target="_blank" style={{textDecoration: "none"}}>&nbsp;Descarrega el meu CV</a>
+
+                                    </li>
+
                                 </ul>
                             </div>
                         </div>
