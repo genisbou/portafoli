@@ -64,6 +64,10 @@ const Inici = () => {
                         interna.
                     </li>
                     <li className="list-group-item">
+                        <strong>Paletitzador en Viyefruit/sa</strong> (06/2024 – 11/2024, Alcarràs)<br/>
+                        Configuració i supervisió de la màquina paletitzadora, control del procés de càrrega i assegurament del palet per al transport.
+                    </li>
+                    <li className="list-group-item">
                         <strong>Tècnic informàtic a Institut Caparrell - Contracte de pràctiquesa</strong> (06/2023 - 12/2023, Lleida)<br/>
                         Manteniment i reparació d’equips, instal·lació i configuració de sistemes operatius, gestió de
                         programari i còpies de seguretat.

@@ -24,8 +24,13 @@ const NavigationBar = () => {
                             <a className="nav-link" href="contacte">CONTACTE</a>
                         </li>
                     </ul>
-                    <i className="bi bi-linkedin ms-3"></i>
-                    <i className="bi bi-github ms-3"></i>
+                    <div className="social-links">
+                        <a href="https://github.com/genisbou" className="social-link"><i className="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/gen%C3%ADs-bou-maj%C3%B3s/" className="social-link"><i className="fab fa-linkedin"></i></a>
+                    </div>
+
+
+
                 </div>
             </div>
         </nav>
