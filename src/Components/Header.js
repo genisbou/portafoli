@@ -18,7 +18,7 @@ const NavigationBar = () => {
                             <a className="nav-link active" aria-current="page" href="inici">INICI</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">SOBRE MI</a>
+                            <a className="nav-link" href="sobre-mi">SOBRE MI</a>
                         </li>
                         <li className="nav-item">
                             <a className="nav-link" href="contacte">CONTACTE</a>
