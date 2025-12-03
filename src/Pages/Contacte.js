@@ -1,9 +1,27 @@
-import React from 'react';
+import React, {useRef} from 'react';
+import emailjs from '@emailjs/browser';
+
 import '../styles/styles.css'
 import Header from '../Components/Header';
 import Footer from '../Components/Footer';
 
+
 const Inici = () => {
+    const form = useRef();
+
+    const handleSubmit = (event) => {
+        event.preventDefault();
+
+        const ServiceId = "service_jt4ioor";
+        const TemplateId = "template_ql1ziyr";
+        const PublicKey = "53HY72XwsBUU30KfL";
+
+        emailjs.sendForm(ServiceId, TemplateId, form.current , PublicKey)
+            .then(result => console.log(result.text))
+            .catch(error => console.error(error))
+
+
+    };
     return (
         <>
             <Header/>
@@ -65,7 +83,7 @@ const Inici = () => {
 
                                         <div className="col-md-12">
                                             <div className="well well-sm">
-                                                <form className="form-horizontal" method="post">
+                                                <form ref={form} onSubmit={handleSubmit}>
                                                     <fieldset>
                                                         <legend className="text-center header">Contacte</legend>
 
@@ -73,7 +91,7 @@ const Inici = () => {
                                                             <span className="col-md-1 col-md-offset-2 text-center"><i
                                                                 className="fa fa-user bigicon"></i></span>
                                                             <div className="col-md-8">
-                                                                <input id="fname" name="name" type="text"
+                                                                <input id="fname" name="username" type="text"
                                                                        placeholder="Nom"
                                                                        className="form-control"/>
                                                             </div>
@@ -84,7 +102,7 @@ const Inici = () => {
                                                             <span className="col-md-1 col-md-offset-2 text-center"><i
                                                                 className="fa fa-envelope"></i></span>
                                                             <div className="col-md-8">
-                                                                <input id="email" name="email" type="text"
+                                                                <input id="email" name="email" type="email"
                                                                        placeholder="Correu electrònic"
                                                                        className="form-control"/>
                                                             </div>
@@ -94,7 +112,7 @@ const Inici = () => {
                                                             <span className="col-md-1 col-md-offset-2 text-center"><i
                                                                 className="fa fa-phone-square bigicon"></i></span>
                                                             <div className="col-md-8">
-                                                                <input id="phone" name="phone" type="text"
+                                                                <input id="phone" name="phone" type="tel"
                                                                        placeholder="Telèfon" className="form-control"/>
                                                             </div>
                                                         </div>
@@ -105,7 +123,7 @@ const Inici = () => {
                                                             <div className="col-md-8">
                                                                 <textarea className="form-control" id="message"
                                                                           name="message"
-                                                                          placeholder="Enter your massage for us here. We will get back to you within 2 business days."
+                                                                          placeholder="Escriu el teu missatge aquí. Et respondrem el més aviat possible."
                                                                           rows="7"></textarea>
                                                             </div>
                                                         </div>

@@ -41,7 +41,7 @@ const Inici = () => {
                         meticulós i amb ganes d’aportar valor, estàs al lloc adequat.
                     </p>
                 </div>
-                <a type="button" className="btn btn-primary"
+                <a type="button" className="btn btn-light"
                    href="/Genis-CV-es.pdf"
                    target="_blank"
                    rel="noopener noreferrer"
@@ -58,15 +58,18 @@ const Inici = () => {
                 </h3>
 
                 <ul className="list-group list-group-flush">
+
+                    <li className="list-group-item">
+                        <strong>Paletitzador en Viyefruit/sa</strong> (06/2024 – 11/2024, Alcarràs)<br/>
+                        Configuració i supervisió de la màquina paletitzadora, control del procés de càrrega i assegurament del palet per al transport.
+                    </li>
+
                     <li className="list-group-item">
                         <strong>Programador en TorresEnergia - Contracte de pràctiques</strong> (10/2024 - 03/2025, Torres de Segre)<br/>
                         Actualització de la pàgina web, automatitzacions amb Visual Basic a Excel i mapejat de la xarxa
                         interna.
                     </li>
-                    <li className="list-group-item">
-                        <strong>Paletitzador en Viyefruit/sa</strong> (06/2024 – 11/2024, Alcarràs)<br/>
-                        Configuració i supervisió de la màquina paletitzadora, control del procés de càrrega i assegurament del palet per al transport.
-                    </li>
+
                     <li className="list-group-item">
                         <strong>Tècnic informàtic a Institut Caparrell - Contracte de pràctiquesa</strong> (06/2023 - 12/2023, Lleida)<br/>
                         Manteniment i reparació d’equips, instal·lació i configuració de sistemes operatius, gestió de
