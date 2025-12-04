@@ -67,6 +67,13 @@
     "objectivesText": "El meu objectiu és créixer com a desenvolupador web i seguir formant-me en tecnologies modernes, aportant alhora una visió tècnica basada en la meva experiència en sistemes, automatització i manteniment informàtic."
 
 
+  },
+
+  "contact" : {
+    "title" : "Contacta amb mi ",
+    "description" : "Si tens qualsevol dubte, proposta o oportunitat laboral, estaré encantat de parlar-ne. Pots escriure’m directament o utilitzar el formulari.",
+    "details" : "Dades de contacte",
+    "viewProfile" : "Veure Perfil"
   }
 
 }

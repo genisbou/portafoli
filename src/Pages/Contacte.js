@@ -4,9 +4,11 @@ import emailjs from '@emailjs/browser';
 import '../styles/styles.css'
 import Header from '../Components/Header';
 import Footer from '../Components/Footer';
+import {useTranslation} from "react-i18next";
 
 
 const Inici = () => {
+    const [t, i18n] = useTranslation("global");
     const form = useRef();
     const [showAlert, setShowAlert] = useState(false);
 
@@ -38,8 +40,9 @@ const Inici = () => {
 
             <div className="container">
 
-                <h3>Contacta amb mi </h3>
-                <p>Si tens qualsevol dubte, proposta o oportunitat laboral, estaré encantat de parlar-ne. Pots escriure’m directament o utilitzar el formulari.
+                <h3>{t('contact.title')} </h3>
+                <p>
+                    {t('contact.description')}
                 </p>
                 <div className="row">
                     <div className="col-sm-6">
