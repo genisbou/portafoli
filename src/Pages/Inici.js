@@ -14,12 +14,14 @@ import img8 from '../assets/maven.svg';
 
 import img9 from '../assets/dawguardia-admin.png';
 import img10 from '../assets/boostrap-logo.png';
+import {useTranslation} from "react-i18next";
 
 
 
 
 
 const Inici = () => {
+    const [t, i18n] = useTranslation("global");
     return (
         <>
             <Header/>
@@ -29,16 +31,12 @@ const Inici = () => {
             <div className="container">
                 <div className="inici">
 
-                    <h3>Benvingut al meu portafoli</h3>
+                    <h3>{t('home.title')}</h3>
                     <p>
-                        Sóc Genís, tècnic de sistemes i operari especialitzat en paletització i maquinària
-                        automatitzada. Amb experiència en el sector logístic i formació en desenvolupament web, combino
-                        la precisió tècnica amb una gran capacitat d’adaptació.
+                        {t('home.presentation1')}
                     </p>
                     <p>
-                        Aquest espai recull el meu recorregut professional, les meves habilitats i projectes, amb
-                        l’objectiu de continuar creixent en entorns tecnològics i productius. Si busques algú compromès,
-                        meticulós i amb ganes d’aportar valor, estàs al lloc adequat.
+                        {t('home.presentation2')}
                     </p>
                 </div>
                 <a type="button" className="btn btn-light"

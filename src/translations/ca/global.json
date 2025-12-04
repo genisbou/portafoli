@@ -1,0 +1,15 @@
+{
+  "header": {
+    "home": "INICI",
+    "aboutMe": "SOBRE MI",
+    "contact": "CONTACTE"
+
+  },
+
+  "home": {
+    "title": "Benvingut al meu portafoli",
+    "presentation1": "Sóc Genís, tècnic de sistemes i operari especialitzat en paletització i maquinària automatitzada. Amb experiència en el sector logístic i formació en desenvolupament web, combino la precisió tècnica amb una gran capacitat d’adaptació.",
+    "presentation2": "Aquest espai recull el meu recorregut professional, les meves habilitats i projectes, amb l’objectiu de continuar creixent en entorns tecnològics i productius. Si busques algú compromès, meticulós i amb ganes d’aportar valor, estàs al lloc adequat."
+  }
+
+}

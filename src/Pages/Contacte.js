@@ -1,4 +1,4 @@
-import React, {useRef} from 'react';
+import React, {useRef, useState} from 'react';
 import emailjs from '@emailjs/browser';
 
 import '../styles/styles.css'
@@ -8,20 +8,30 @@ import Footer from '../Components/Footer';
 
 const Inici = () => {
     const form = useRef();
+    const [showAlert, setShowAlert] = useState(false);
 
     const handleSubmit = (event) => {
+
         event.preventDefault();
 
-        const ServiceId = "service_jt4ioor";
+        const ServiceId = "service_0y3jslv";
         const TemplateId = "template_ql1ziyr";
         const PublicKey = "53HY72XwsBUU30KfL";
 
         emailjs.sendForm(ServiceId, TemplateId, form.current , PublicKey)
-            .then(result => console.log(result.text))
-            .catch(error => console.error(error))
+            .then(() => {
+                setShowAlert(true)
+            })
+            .catch(() => {
+                setShowAlert(true)
+            })
 
 
-    };
+
+
+
+
+    }
     return (
         <>
             <Header/>
@@ -139,6 +149,16 @@ const Inici = () => {
                                                         </div>
                                                     </fieldset>
                                                 </form>
+
+
+                                                {/* Mensaje de confirmación con Bootstrap 5 */}
+                                                {showAlert && (
+                                                    <div className="alert alert-success mt-3" role="alert">
+                                                        Missatge enviat amb èxit!
+                                                    </div>
+                                                )}
+
+
                                             </div>
                                         </div>
                                     </div>
