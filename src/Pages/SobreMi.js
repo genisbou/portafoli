@@ -2,15 +2,17 @@ import React from 'react';
 import '../styles/styles.css'
 import Header from '../Components/Header';
 import Footer from '../Components/Footer';
+import {useTranslation} from "react-i18next";
 
 const SobreMi = () => {
+    const [t, i18n] = useTranslation("global");
     return (
         <>
             <Header/>
 
             <div className="container mt-4">
 
-                <h3><i className="bi bi-person-circle me-2"></i>Sobre mi</h3>
+                <h3><i className="bi bi-person-circle me-2"></i>{t('aboutMe.title')}</h3>
 
                 <div className="row mt-4">
 
@@ -26,21 +28,15 @@ const SobreMi = () => {
 
                     <div className="col-md-8">
                         <p>
-                            Hola! Sóc <strong>Genís Bou</strong>, tècnic en sistemes microinformàtics i xarxes
-                            i graduat en <strong>Desenvolupament d’Aplicacions Web (DAW)</strong>.
-                            M’apassiona la tecnologia, l’automatització i la resolució de problemes, tant en
-                            entorns de programació com en maquinària industrial i sistemes informàtics.
+                            {t('aboutMe.presentation1')}
                         </p>
 
                         <p>
-                            Soc una persona constant, responsable i que aprèn ràpid.
-                            Disfruto treballant en equip i m’agrada mantenir una actitud proactiva, millorant
-                            processos i buscant noves solucions.
+                            {t('aboutMe.presentation2')}
                         </p>
 
                         <p>
-                            Actualment em trobo expandint els meus coneixements en el món del desenvolupament web,
-                            aprenent frameworks moderns i reforçant conceptes de backend i bases de dades.
+                            {t('aboutMe.presentation3')}
                         </p>
                     </div>
                 </div>
@@ -48,22 +44,21 @@ const SobreMi = () => {
                 <hr className="my-4"/>
 
                 {/* Formació */}
-                <h4><i className="bi bi-mortarboard me-2"></i>Formació Acadèmica</h4>
+                <h4><i className="bi bi-mortarboard me-2"></i>{t('aboutMe.titleTraining')}</h4>
 
                 <ul className="list-group list-group-flush mb-4">
                     <li className="list-group-item">
-                        <strong>Cicle Superior en Desenvolupament d’Aplicacions Web – DAW</strong><br/>
+                        <strong>{t('aboutMe.titleDaw')}</strong><br/>
                         Institut Caparrella, Lleida (2024 - 2025)
                     </li>
 
                     <li className="list-group-item">
-                        <strong>Cicle Superior en Administració de Sistemes
-                            Informàtics en xarxa – ASIX</strong><br/>
+                        <strong>{t('aboutMe.titleAsix')}</strong><br/>
                         Institut Caparrella, Lleida (2022 - 2024)
                     </li>
 
                     <li className="list-group-item">
-                        <strong>Cicle Mitjà en Sistemes Microinformàtics i Xarxes – SMX</strong><br/>
+                        <strong>{t('aboutMe.titleSmx')}</strong><br/>
                         Institut Caparrella, Lleida (2019 - 2022)
                     </li>
 
@@ -76,7 +71,7 @@ const SobreMi = () => {
                 <hr className="my-4"/>
 
                 {/* Habilitats */}
-                <h4><i className="bi bi-gear-wide-connected me-2"></i>Habilitats tècniques</h4>
+                <h4><i className="bi bi-gear-wide-connected me-2"></i>{t('aboutMe.skills')}</h4>
 
                 <div className="row text-center mt-3">
 
@@ -102,7 +97,7 @@ const SobreMi = () => {
 
                     <div className="col-6 col-md-3 mb-3">
                         <i className="bi bi-laptop fs-1"></i>
-                        <p>Windows, Linux, Xarxes, Muntatge</p>
+                        <p>Windows, Linux, {t('aboutMe.networking')}</p>
                     </div>
 
                     <div className="col-6 col-md-3 mb-3">
@@ -115,13 +110,10 @@ const SobreMi = () => {
                 <hr className="my-4"/>
 
                 {/* Objectius professionals */}
-                <h4><i className="bi bi-flag me-2"></i>Objectius</h4>
+                <h4><i className="bi bi-flag me-2"></i>{t('aboutMe.objectives')}</h4>
 
                 <p>
-                    El meu objectiu és créixer com a desenvolupador web
-                    i seguir formant-me en tecnologies modernes, aportant alhora
-                    una visió tècnica basada en la meva experiència en sistemes,
-                    automatització i manteniment informàtic.
+                    {t('aboutMe.objectivesText')}
                 </p>
 
             </div>

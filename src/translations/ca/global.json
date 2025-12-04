@@ -6,10 +6,67 @@
 
   },
 
+  "footer": {
+    "text" : "Creant experiències sorprenents i solucions innovadores per als nostres clients a tot el món.",
+    "copy" : "Tots els drets reservats",
+    "home": "Inici",
+    "aboutMe": "Sobre mi",
+    "contact": "Contacte"
+
+  },
+
+
   "home": {
     "title": "Benvingut al meu portafoli",
     "presentation1": "Sóc Genís, tècnic de sistemes i operari especialitzat en paletització i maquinària automatitzada. Amb experiència en el sector logístic i formació en desenvolupament web, combino la precisió tècnica amb una gran capacitat d’adaptació.",
-    "presentation2": "Aquest espai recull el meu recorregut professional, les meves habilitats i projectes, amb l’objectiu de continuar creixent en entorns tecnològics i productius. Si busques algú compromès, meticulós i amb ganes d’aportar valor, estàs al lloc adequat."
+    "presentation2": "Aquest espai recull el meu recorregut professional, les meves habilitats i projectes, amb l’objectiu de continuar creixent en entorns tecnològics i productius. Si busques algú compromès, meticulós i amb ganes d’aportar valor, estàs al lloc adequat.",
+    "downloadCv" : "Descarrega el meu CV",
+
+    "titleWorks" : "Experiència laboral",
+    "titleYepes" : "Paletitzador en Viyefruit/sa",
+    "descriptionYepes" : " Configuració i supervisió de la màquina paletitzadora, control del procés de càrrega i assegurament del palet per al transport.",
+    "titleTorres" : "Programador en TorresEnergia - Contracte de pràctiques",
+    "descriptionTorres" : "Actualització de la pàgina web, automatitzacions amb Visual Basic a Excel i mapejat de la xarxa interna.",
+    "titleCapa" : "Tècnic informàtic a Institut Caparrell - Contracte de pràctiques",
+    "descriptionCapa" : "Manteniment i reparació d’equips, instal·lació i configuració de sistemes operatius, gestió de programari i còpies de seguretat.",
+    "titleOptica" : "Tècnic informàtic a Natural Optics Group - Contracte de pràctiques ",
+    "descriptionOptica" : "Manteniment d’equips, instal·lació de sistemes operatius i programari, assegurant el bon funcionament dels dispositius.",
+
+    "projects" : "Projectes",
+    "titleAlpicat" : "Club Futbol Alpicat (Projecte Real)",
+    "descriptionAlpicat" : "Aplicació web desenvolupada amb PHP i el framework CodeIgniter 4, amb una base de dades MySQL. El projecte permet als usuaris de qualsevol edat accedir fàcilment a tota la informació del club de futbol: consultar els últims resultats, veure la classificació de cada categoria, llegir les novetats i notícies recents, i accedir a una zona privada per a administradors. Aquesta àrea d’administració permet gestionar el contingut del lloc web de manera senzilla i segura. El disseny està pensat per ser intuïtiu i accessible, amb una estructura clara i funcional. El projecte inclou documentació tècnica detallada i el codi font està disponible per a consulta.",
+    "code" : "Codi font",
+    "docu" : "Documentació tècnica del projecte",
+    "titleJava" : "Gestor de tiquets de compra en Java",
+    "descriptionJava" : "Aplicació de consola en Java amb Maven que permet gestionar un tiquet de compra. L’usuari pot afegir productes, consultar el tiquet complet, visualitzar el preu total i accedir a cada línia de comanda mitjançant el seu índex. El projecte inclou constructors, mètodes (getters, setters, equals, hashCode, toString) i control de límits en l’array per evitar afegir més de 10 línies.",
+    "titleDawguardia" : "DAWGuarida — Gestor de Notícies",
+    "descriptionDawguardia" : "DawGuardia és una aplicació web desenvolupada amb CodeIgniter 4 que simula el funcionament d’un diari digital d’última generació. L’aplicació implementa una part pública i privada amb un sistema de rols complet amb Administrador, Editor, Periodista, Subscriptor i Visitant, cadascun amb permisos específics. El projecte aplica el patró MVC amb CodeIgniter i gestió de base de dades amb MySQL. Les funcionalitats principals són :",
+    "functionDawguardia1" : "Gestió de notícies per part de periodistes, amb validació prèvia dels editors.",
+    "functionDawguardia2" : "Classificació per seccions (local, esports, societat, opinió, etc.).",
+    "functionDawguardia3" : "Sistema de comentaris: els visitants poden comentar, però els comentaris s’han de validar; els subscriptors poden fer-ho lliurement.",
+    "functionDawguardia4" : "Notícies exclusives per a subscriptors.",
+    "functionDawguardia5": "Gestió de subscripcions: alta, validació i desactivació d’usuaris per impagament.",
+    "functionDawguardia6" : "Panell administratiu complet per controlar usuaris, rols, seccions i publicacions.",
+    "functionDawguardia7" : "Compartició de notícies mitjançant enllaços públics del tipus : https://localhost/noticia/seccio/el-titular-de-la-noticia. "
+  },
+
+  "aboutMe": {
+    "title" : "Sobre mi",
+    "presentation1" : "Hola! Sóc Genís Bou, tècnic en sistemes microinformàtics i xarxes i graduat en Desenvolupament d’Aplicacions Web (DAW). M’apassiona la tecnologia, l’automatització i la resolució de problemes, tant en entorns de programació com en maquinària industrial i sistemes informàtics.",
+    "presentation2" : "Sóc una persona constant, responsable i que aprèn ràpid. Disfruto treballant en equip i m’agrada mantenir una actitud proactiva, millorant processos i buscant noves solucions.",
+    "presentation3" : "Actualment em trobo expandint els meus coneixements en el món del desenvolupament web, aprenent frameworks moderns i reforçant conceptes de backend i bases de dades.",
+
+    "titleTraining" : "Formació Acadèmica",
+    "titleDaw" : "Cicle Superior en Desenvolupament d’Aplicacions Web – DAW",
+    "titleAsix" : "Cicle Superior en Administració de Sistemes Informàtics en xarxa – ASIX",
+    "titleSmx" : "Cicle Mitjà en Sistemes Microinformàtics i Xarxes – SMX",
+
+    "skills" : "Habilitats tècniques",
+    "networking" : "Xarxes, Muntatge",
+    "objectives": "Objectius",
+    "objectivesText": "El meu objectiu és créixer com a desenvolupador web i seguir formant-me en tecnologies modernes, aportant alhora una visió tècnica basada en la meva experiència en sistemes, automatització i manteniment informàtic."
+
+
   }
 
 }

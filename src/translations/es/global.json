@@ -1,5 +1,69 @@
 {
   "header": {
-    "home": "INICIO"
+    "home": "INICIO",
+    "aboutMe": "SOBRE MÍ",
+    "contact": "CONTACTO"
+  },
+
+  "footer": {
+    "text": "Creando experiencias sorprendentes y soluciones innovadoras para nuestros clientes en todo el mundo.",
+    "copy": "Todos los derechos reservados",
+    "home": "Inicio",
+    "aboutMe": "Sobre mí",
+    "contact": "Contacto"
+  },
+
+  "home": {
+    "title": "Bienvenido a mi portafolio",
+    "presentation1": "Soy Genís, técnico de sistemas y operario especializado en paletización y maquinaria automatizada. Con experiencia en el sector logístico y formación en desarrollo web, combino la precisión técnica con una gran capacidad de adaptación.",
+    "presentation2": "Este espacio recoge mi trayectoria profesional, mis habilidades y proyectos, con el objetivo de seguir creciendo en entornos tecnológicos y productivos. Si buscas a alguien comprometido, meticuloso y con ganas de aportar valor, estás en el lugar adecuado.",
+    "downloadCv": "Descargar mi CV",
+
+    "titleWorks": "Experiencia laboral",
+    "titleYepes": "Paletizador en Viyefruit/sa",
+    "descriptionYepes": "Configuración y supervisión de la máquina paletizadora, control del proceso de carga y aseguramiento del palet para el transporte.",
+    "titleTorres": "Programador en TorresEnergia - Contrato de prácticas",
+    "descriptionTorres": "Actualización de la página web, automatizaciones con Visual Basic en Excel y mapeo de la red interna.",
+    "titleCapa": "Técnico informático en Institut Caparrell - Contrato de prácticas",
+    "descriptionCapa": "Mantenimiento y reparación de equipos, instalación y configuración de sistemas operativos, gestión de software y copias de seguridad.",
+    "titleOptica": "Técnico informático en Natural Optics Group - Contrato de prácticas",
+    "descriptionOptica": "Mantenimiento de equipos, instalación de sistemas operativos y software, asegurando el correcto funcionamiento de los dispositivos.",
+
+    "projects": "Proyectos",
+    "titleAlpicat": "Club Futbol Alpicat (Proyecto real)",
+    "descriptionAlpicat": "Aplicación web desarrollada con PHP y el framework CodeIgniter 4, con una base de datos MySQL. El proyecto permite a los usuarios de cualquier edad acceder fácilmente a toda la información del club de fútbol: consultar los últimos resultados, ver la clasificación de cada categoría, leer novedades y noticias recientes y acceder a una zona privada para administradores. Esta área de administración permite gestionar el contenido del sitio web de manera sencilla y segura. El diseño está pensado para ser intuitivo y accesible, con una estructura clara y funcional. El proyecto incluye documentación técnica detallada y el código fuente está disponible para consulta.",
+    "code": "Código fuente",
+    "docu": "Documentación técnica del proyecto",
+
+    "titleJava": "Gestor de tickets de compra en Java",
+    "descriptionJava": "Aplicación de consola en Java con Maven que permite gestionar un ticket de compra. El usuario puede agregar productos, consultar el ticket completo, visualizar el precio total y acceder a cada línea de pedido mediante su índice. El proyecto incluye constructores, métodos (getters, setters, equals, hashCode, toString) y control de límites en el array para evitar agregar más de 10 líneas.",
+
+    "titleDawguardia": "DAWGuarida — Gestor de Noticias",
+    "descriptionDawguardia": "DawGuardia es una aplicación web desarrollada con CodeIgniter 4 que simula el funcionamiento de un periódico digital de última generación. La aplicación implementa una parte pública y privada con un sistema de roles completo de Administrador, Editor, Periodista, Suscriptor y Visitante, cada uno con permisos específicos. El proyecto aplica el patrón MVC con CodeIgniter y la gestión de base de datos con MySQL. Las funcionalidades principales son:",
+    "functionDawguardia1": "Gestión de noticias por parte de periodistas, con validación previa de los editores.",
+    "functionDawguardia2": "Clasificación por secciones (local, deportes, sociedad, opinión, etc.).",
+    "functionDawguardia3": "Sistema de comentarios: los visitantes pueden comentar, pero los comentarios deben ser validados; los suscriptores pueden hacerlo libremente.",
+    "functionDawguardia4": "Noticias exclusivas para suscriptores.",
+    "functionDawguardia5": "Gestión de suscripciones: alta, validación y desactivación de usuarios por impago.",
+    "functionDawguardia6": "Panel administrativo completo para controlar usuarios, roles, secciones y publicaciones.",
+    "functionDawguardia7": "Compartición de noticias mediante enlaces públicos del tipo: https://localhost/noticia/seccion/el-titular-de-la-noticia."
+  },
+
+  "aboutMe": {
+    "title": "Sobre mí",
+    "presentation1": "¡Hola! Soy Genís Bou, técnico en sistemas microinformáticos y redes y graduado en Desarrollo de Aplicaciones Web (DAW). Me apasiona la tecnología, la automatización y la resolución de problemas, tanto en entornos de programación como en maquinaria industrial y sistemas informáticos.",
+    "presentation2": "Soy una persona constante, responsable y con facilidad para aprender rápido. Disfruto trabajando en equipo y me gusta mantener una actitud proactiva, mejorando procesos y buscando nuevas soluciones.",
+    "presentation3": "Actualmente estoy ampliando mis conocimientos en el mundo del desarrollo web, aprendiendo frameworks modernos y reforzando conceptos de backend y bases de datos.",
+
+    "titleTraining": "Formación Académica",
+    "titleDaw": "Grado Superior en Desarrollo de Aplicaciones Web – DAW",
+    "titleAsix": "Grado Superior en Administración de Sistemas Informáticos en Red – ASIR",
+    "titleSmx": "Grado Medio en Sistemas Microinformáticos y Redes – SMR",
+
+    "skills": "Habilidades técnicas",
+    "networking": "Redes, Montaje",
+    "objectives": "Objetivos",
+    "objectivesText": "Mi objetivo es crecer como desarrollador web y seguir formándome en tecnologías modernas, aportando a la vez una visión técnica basada en mi experiencia en sistemas, automatización y mantenimiento informático."
   }
+
 }

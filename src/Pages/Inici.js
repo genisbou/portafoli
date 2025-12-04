@@ -45,62 +45,52 @@ const Inici = () => {
                    rel="noopener noreferrer"
 
                 > <i className="bi bi-file-earmark-person me-2"></i>
-                    Descarrega el meu CV
+                    {t('home.downloadCv')}
                 </a>
 
                 <p></p>
 
                 <h3>
                     <i className="bi bi-building"></i>
-                    Experiència laboral
+                    {t('home.titleWorks')}
+
                 </h3>
 
                 <ul className="list-group list-group-flush">
 
                     <li className="list-group-item">
-                        <strong>Paletitzador en Viyefruit/sa</strong> (06/2024 – 11/2024, Alcarràs)<br/>
-                        Configuració i supervisió de la màquina paletitzadora, control del procés de càrrega i assegurament del palet per al transport.
+                        <strong>{t('home.titleYepes')}</strong> (06/2024 – 11/2024, Alcarràs)<br/>
+                        {t('home.descriptionYepes')}
                     </li>
 
                     <li className="list-group-item">
-                        <strong>Programador en TorresEnergia - Contracte de pràctiques</strong> (10/2024 - 03/2025, Torres de Segre)<br/>
-                        Actualització de la pàgina web, automatitzacions amb Visual Basic a Excel i mapejat de la xarxa
-                        interna.
+                        <strong>{t('home.titleTorres')}</strong> (10/2024 - 03/2025, Torres de Segre)<br/>
+                        {t('home.descriptionTorres')}
+
                     </li>
 
                     <li className="list-group-item">
-                        <strong>Tècnic informàtic a Institut Caparrell - Contracte de pràctiquesa</strong> (06/2023 - 12/2023, Lleida)<br/>
-                        Manteniment i reparació d’equips, instal·lació i configuració de sistemes operatius, gestió de
-                        programari i còpies de seguretat.
+                        <strong>{t('home.titleCapa')}</strong> (06/2023 - 12/2023, Lleida)<br/>
+                        {t('home.descriptionCapa')}
                     </li>
                     <li className="list-group-item">
-                        <strong>Tècnic informàtic a Natural Optics Group - Contracte de pràctiques</strong> (02/2021 - 05/2021, Torrefarrera)<br/>
-                        Manteniment d’equips, instal·lació de sistemes operatius i programari, assegurant el bon
-                        funcionament dels dispositius.
+                        <strong>{t('home.titleOptica')}</strong> (02/2021 - 05/2021, Torrefarrera)<br/>
+                        {t('home.descriptionOptica')}
                     </li>
                 </ul>
 
                 <p></p>
                 <h3>
                     <i className="bi bi-file-earmark-code"></i>
-                    Projectes
+                    {t('home.projects')}
                 </h3>
 
                 <div className="card">
                     <img src={img2} alt="Imagen de Japón"/>
                     <div className="card-body">
-                        <h5 className="card-title">Club Futbol Alpicat (Projecte Real)</h5>
+                        <h5 className="card-title"> {t('home.titleAlpicat')}</h5>
                         <p className="card-text">
-                            Aplicació web desenvolupada amb PHP i el framework CodeIgniter 4, amb una base de dades
-                            MySQL. El projecte permet als usuaris de qualsevol edat accedir fàcilment a tota la
-                            informació del club de futbol: consultar els últims resultats, veure la classificació de
-                            cada categoria, llegir les novetats i notícies recents, i accedir a una zona privada per a
-                            administradors.
-                            Aquesta àrea d’administració permet gestionar el contingut del lloc web de manera senzilla i
-                            segura. El disseny està pensat per ser intuïtiu i accessible, amb una estructura clara i
-                            funcional. El projecte inclou documentació tècnica detallada i el codi font està disponible
-                            per a consulta.
-
+                            {t('home.descriptionAlpicat')}
                         </p>
                         <img className="img-fluid logo-php" src={img3} alt="Imagen de Japón"/>
                         <img className="img-fluid logo-php" src={img4} alt="Imagen de Japón"/>
@@ -109,7 +99,7 @@ const Inici = () => {
                         <p></p>
                         <a href="https://github.com/AndreyPlakhov/Proyecto-Ci4" className="btn btn-outline-secondary">
                             <i className=" bi bi-code-slash"></i>
-                            &nbsp; Codi font</a>
+                            &nbsp;  {t('home.code')}</a>
 
                         <p>
 
@@ -122,7 +112,7 @@ const Inici = () => {
                             className="btn btn-outline-secondary"
                         >
                             <i className="bi bi-file-earmark-code me-2"></i>
-                            Documentació tècnica del projecte
+                            {t('home.docu')}
                         </a>
 
 
@@ -137,15 +127,9 @@ const Inici = () => {
                 <div className="card">
                     <img src={img6} style={{width: '50%'}} alt="Imagen de Japón"/>
                     <div className="card-body">
-                        <h5 className="card-title">Gestor de tiquets de compra en Java</h5>
+                        <h5 className="card-title"> {t('home.titleJava')}</h5>
                         <p className="card-text">
-                            Aplicació de consola en Java amb Maven que permet gestionar un tiquet de compra.
-                            L’usuari pot afegir productes, consultar el tiquet complet, visualitzar el preu
-                            total i accedir a cada línia de comanda mitjançant el seu índex. El projecte inclou
-                            constructors, mètodes (getters, setters, equals, hashCode, toString) i control de
-                            límits en l’array per evitar afegir més de 10 línies.
-
-
+                            {t('home.descriptionJava')}
                         </p>
 
 
@@ -155,7 +139,7 @@ const Inici = () => {
                         <p></p>
                         <a href="https://github.com/genisbou/Gestor-Tiquets" className="btn btn-outline-secondary">
                             <i className=" bi bi-code-slash"></i>
-                            &nbsp; Codi font</a>
+                            &nbsp;  {t('home.code')}</a>
 
                         <p>
 
@@ -172,47 +156,29 @@ const Inici = () => {
                 <div className="card">
                     <img src={img9} style={{width: '75%'}} alt="Imagen de Japón"/>
                     <div className="card-body">
-                        <h5 className="card-title"> DAWGuarida — Gestor de Notícies</h5>
+                        <h5 className="card-title"> {t('home.titleDawguardia')} </h5>
                         <p className="card-text">
-                            DawGuardia és una aplicació web desenvolupada amb CodeIgniter 4 que simula el funcionament
-                            d’un diari digital d’última generació.
-                            L’aplicació implementa un sistema de rols complet amb Administrador, Editor, Periodista,
-                            Subscriptor i Visitant, cadascun amb permisos específics.
-                            Les funcionalitats principals són :
+                            {t('home.descriptionDawguardia')}
 
                         </p>
 
                         <ol className="list-group list-group-numbered">
-                            <li className="list-group-item"><i class="bi bi-newspaper"></i> Gestió de notícies per part
-                                de periodistes, amb validació
-                                prèvia dels editors.
+                            <li className="list-group-item"><i class="bi bi-newspaper"></i> {t('home.functionDawguardia1')}
                             </li>
-                            <li className="list-group-item"> <i class="bi bi-newspaper"></i> Classificació per seccions
-                                (local, esports, societat,
-                                opinió, etc.).
+                            <li className="list-group-item"> <i class="bi bi-newspaper"></i> {t('home.functionDawguardia2')}
                             </li>
-                            <li className="list-group-item"><i className="bi bi-chat-left"></i> Sistema de comentaris:
-                                els visitants poden comentar, però
-                                els comentaris s’han de validar; els subscriptors poden fer-ho lliurement.
+                            <li className="list-group-item"><i className="bi bi-chat-left"></i> {t('home.functionDawguardia3')}
                             </li>
-                            <li className="list-group-item"><i className="bi bi-lock"></i> Notícies exclusives per a
-                                subscriptors.
+                            <li className="list-group-item"><i className="bi bi-lock"></i> {t('home.functionDawguardia4')}
                             </li>
-                            <li className="list-group-item"><i class="bi bi-credit-card"></i> Gestió de subscripcions: alta, validació i desactivació
-                                d’usuaris per impagament.
+                            <li className="list-group-item"><i class="bi bi-credit-card"></i> {t('home.functionDawguardia5')}
                             </li>
-                            <li className="list-group-item"><i class="bi bi-gear"></i> Panell administratiu complet per controlar usuaris, rols,
-                                seccions i publicacions.
+                            <li className="list-group-item"><i class="bi bi-gear"></i> {t('home.functionDawguardia6')}
                             </li>
-                            <li className="list-group-item"> <i class="bi bi-globe"></i> Compartició de notícies mitjançant enllaços públics del
-                                tipus :
-                                <em> https://localhost/noticia/seccio/el-titular-de-la-noticia. </em>
+                            <li className="list-group-item"> <i class="bi bi-globe"></i> {t('home.functionDawguardia7')}
                             </li>
                         </ol>
                         <p></p>
-                        <p>
-                            El projecte aplica el patró MVC amb CodeIgniter i gestió de base de dades amb MySQL.
-                        </p>
 
 
                         <img className="img-fluid logo-php" src={img3} alt="Imagen de Japón"/>
@@ -223,7 +189,7 @@ const Inici = () => {
                         <p></p>
                         <a href="https://github.com/genisbou/daw2ci4-25-genis" className="btn btn-outline-secondary">
                             <i className=" bi bi-code-slash"></i>
-                            &nbsp; Codi font</a>
+                            &nbsp; {t('home.code')}</a>
 
                         <p>
 
