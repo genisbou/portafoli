@@ -50,7 +50,9 @@ const Inici = () => {
                         <div className="card h-100">
 
                             <div className="card-body">
-                                <h5 className="card-title">Dades de contacte</h5>
+                                <h5 className="card-title">
+                                    {t('contact.details')}
+                                </h5>
                                 <ul className="list-group list-group-flush">
                                     <li className="list-group-item">
                                         <i className="bi bi-telephone me-2" style={{fontSize: "22px"}}> </i>
@@ -66,17 +68,17 @@ const Inici = () => {
                                     </li>
                                     <li className="list-group-item">
                                         <i className="bi bi-linkedin" style={{fontSize: "22px"}}> </i>
-                                        <a href="https://www.linkedin.com/in/gen%C3%ADs-bou-maj%C3%B3s/" style={{textDecoration: "none"}}>&nbsp;Veure Perfil</a>
+                                        <a href="https://www.linkedin.com/in/gen%C3%ADs-bou-maj%C3%B3s/" style={{textDecoration: "none"}}>&nbsp;  {t('contact.viewProfile')}</a>
                                     </li>
                                     <li className="list-group-item">
                                         <i className="bi bi-github" style={{fontSize: "22px"}}> </i>
-                                        <a href="https://github.com/genisbou" style={{textDecoration: "none"}}>&nbsp;Veure Perfil</a>
+                                        <a href="https://github.com/genisbou" style={{textDecoration: "none"}}>&nbsp;  {t('contact.viewProfile')}</a>
 
                                     </li>
 
                                     <li className="list-group-item">
                                         <i className="bi bi-filetype-pdf" style={{fontSize: "22px"}}> </i>
-                                        <a href="/Genis-CV-es.pdf" target="_blank" style={{textDecoration: "none"}}>&nbsp;Descarrega el meu CV</a>
+                                        <a href="/Genis-CV-es.pdf" target="_blank" style={{textDecoration: "none"}}>&nbsp;  {t('home.downloadCv')}</a>
 
                                     </li>
 
@@ -98,14 +100,14 @@ const Inici = () => {
                                             <div className="well well-sm">
                                                 <form ref={form} onSubmit={handleSubmit}>
                                                     <fieldset>
-                                                        <legend className="text-center header">Contacte</legend>
+                                                        <legend className="text-center header"> {t('contact.contact')}</legend>
 
                                                         <div className="form-group">
                                                             <span className="col-md-1 col-md-offset-2 text-center"><i
                                                                 className="fa fa-user bigicon"></i></span>
                                                             <div className="col-md-8">
                                                                 <input id="fname" name="username" type="text"
-                                                                       placeholder="Nom"
+                                                                       placeholder= {t('contact.name')}
                                                                        className="form-control"/>
                                                             </div>
                                                         </div>
@@ -116,7 +118,7 @@ const Inici = () => {
                                                                 className="fa fa-envelope"></i></span>
                                                             <div className="col-md-8">
                                                                 <input id="email" name="email" type="email"
-                                                                       placeholder="Correu electrònic"
+                                                                       placeholder= {t('contact.email')}
                                                                        className="form-control"/>
                                                             </div>
                                                         </div>
@@ -126,7 +128,7 @@ const Inici = () => {
                                                                 className="fa fa-phone-square bigicon"></i></span>
                                                             <div className="col-md-8">
                                                                 <input id="phone" name="phone" type="tel"
-                                                                       placeholder="Telèfon" className="form-control"/>
+                                                                       placeholder={t('contact.phone')} className="form-control"/>
                                                             </div>
                                                         </div>
 
@@ -136,7 +138,7 @@ const Inici = () => {
                                                             <div className="col-md-8">
                                                                 <textarea className="form-control" id="message"
                                                                           name="message"
-                                                                          placeholder="Escriu el teu missatge aquí. Et respondrem el més aviat possible."
+                                                                          placeholder= {t('contact.message')}
                                                                           rows="7"></textarea>
                                                             </div>
                                                         </div>
@@ -146,7 +148,7 @@ const Inici = () => {
                                                         <div className="form-group">
                                                             <div className="col-md-12 text-center">
                                                                 <button type="submit"
-                                                                        className="btn btn-primary btn-lg">Enviar
+                                                                        className="btn btn-primary btn-lg">{t('contact.submit')}
                                                                 </button>
                                                             </div>
                                                         </div>
@@ -157,7 +159,7 @@ const Inici = () => {
                                                 {/* Mensaje de confirmación con Bootstrap 5 */}
                                                 {showAlert && (
                                                     <div className="alert alert-success mt-3" role="alert">
-                                                        Missatge enviat amb èxit!
+                                                        {t('message.Submit')}
                                                     </div>
                                                 )}
 

@@ -64,6 +64,21 @@
     "networking": "Redes, Montaje",
     "objectives": "Objetivos",
     "objectivesText": "Mi objetivo es crecer como desarrollador web y seguir formándome en tecnologías modernas, aportando a la vez una visión técnica basada en mi experiencia en sistemas, automatización y mantenimiento informático."
+  },
+
+  "contact": {
+    "title": "Contacta conmigo",
+    "description": "Si tienes alguna duda, propuesta u oportunidad laboral, estaré encantado de hablarlo. Puedes escribirme directamente o utilizar el formulario.",
+    "details": "Datos de contacto",
+    "viewProfile": "Ver Perfil",
+    "contact": "Contacto",
+    "name": "Nombre",
+    "email": "Correo electrónico",
+    "phone": "Teléfono",
+    "message": "Escribe tu mensaje aquí. Te responderé lo antes posible.",
+    "submit": "Enviar",
+    "messageSubmit": "¡Mensaje enviado con éxito!"
   }
+
 
 }

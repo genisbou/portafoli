@@ -73,7 +73,14 @@
     "title" : "Contacta amb mi ",
     "description" : "Si tens qualsevol dubte, proposta o oportunitat laboral, estaré encantat de parlar-ne. Pots escriure’m directament o utilitzar el formulari.",
     "details" : "Dades de contacte",
-    "viewProfile" : "Veure Perfil"
+    "viewProfile" : "Veure Perfil",
+    "contact" : "Contacte",
+    "name" : "Nom",
+    "email" : "Correu electrònic",
+    "phone" : "Telèfon",
+    "message" :"Escriu el teu missatge aquí. Et respondrem el més aviat possible.",
+    "submit" : "Enviar",
+    "messageSubmit" : "Missatge enviat amb èxit!"
   }
 
 }

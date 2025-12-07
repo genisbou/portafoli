@@ -64,6 +64,22 @@
     "networking": "Networking, Assembly",
     "objectives": "Objectives",
     "objectivesText": "My goal is to grow as a web developer and continue learning modern technologies, while contributing a technical perspective based on my experience in systems, automation, and IT maintenance."
+  },
+
+  "contact": {
+    "title": "Contact me",
+    "description": "If you have any questions, proposals, or job opportunities, I will be happy to talk about them. You can write to me directly or use the form.",
+    "details": "Contact details",
+    "viewProfile": "View Profile",
+    "contact": "Contact",
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone",
+    "message": "Write your message here. I will reply as soon as possible.",
+    "submit": "Send",
+    "messageSubmit": "Message sent successfully!"
   }
+
+
 
 }
