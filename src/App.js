@@ -15,32 +15,34 @@ import SobreMi from "./Pages/SobreMi";
 const lang =  localStorage.getItem("lang") || "ca";
 
 function App() {
-  return (
-      <Router>
-          <Routes>
+
+    return (
+        <Router basename="/portafoli">
+            <Routes>
+                {/* Català */}
+                <Route path="/" element={<Inici />} />
+                <Route path="/ca" element={<Inici />} />
+                <Route path="/ca/sobre-mi" element={<SobreMi />} />
+                <Route path="/ca/contacte" element={<Contacte />} />
+
+                {/* Castellà */}
+                <Route path="/es/inicio" element={<Inici />} />
+                <Route path="/es/sobre-mi" element={<SobreMi />} />
+                <Route path="/es/contacto" element={<Contacte />} />
+
+                {/* Anglès */}
+                <Route path="/en/home" element={<Inici />} />
+                <Route path="/en/about" element={<SobreMi />} />
+                <Route path="/en/contact" element={<Contacte />} />
+
+                {/* Fallback */}
+                <Route path="*" element={<Inici />} />
+            </Routes>
+        </Router>
 
 
-              {/* Català */}
-              <Route path="genisbou.github.io/portafoli/" element={<Inici />} />
-              <Route path="genisbou.github.io/portafoli/ca/" element={<Inici />} />
-              <Route path="genisbou.github.io/portafoli/ca/sobre-mi" element={<SobreMi />} />
-              <Route path="genisbou.github.io/portafoli/ca/contacte" element={<Contacte />} />
 
-              {/* Castellà */}
-              <Route path="genisbou.github.io/portafolio/es/inicio" element={<Inici />} />
-              <Route path="genisbou.github.io/portafolio/es/sobre-mi" element={<SobreMi />} />
-              <Route path="genisbou.github.io/portafolio/es/contacto" element={<Contacte />} />
-
-              {/* Anglès */}
-              <Route path="genisbou.github.io/portfolio/en/home" element={<Inici />} />
-              <Route path="genisbou.github.io/portfolio/en/about" element={<SobreMi />} />
-              <Route path="genisbou.github.io/portfolio/en/contact" element={<Contacte />} />
-          </Routes>
-
-      </Router>
-
-
-  );
+    );
 
 }
 
