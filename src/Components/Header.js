@@ -2,11 +2,12 @@ import React, { useEffect } from 'react';
 import '../styles/styles.css';
 import { useTranslation } from "react-i18next";
 import routesPath from "../routesPath";
-import {Link} from "react-router-dom";
+import {Link, useNavigate} from "react-router-dom";
 
 
 const NavigationBar = () => {
     const [t, i18n] = useTranslation("global");
+    const navigate = useNavigate();
 
     // Manté l'idioma seleccionat al refrescar
     useEffect(() => {
@@ -50,7 +51,9 @@ const NavigationBar = () => {
 
         if (routesPath[lng]) {
             const newPath = "/" + lng + "/" + routesPath[lng][routeKeyFound];
-            window.location.pathname = newPath;
+            navigate("/" + newPath );
+
+
         }
     };
 
@@ -69,17 +72,20 @@ const NavigationBar = () => {
                 <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                         <li className="nav-item">
-                            <Link className="nav-link active" to={lang + "/" + routesPath[lang].home}>
+                            <Link className="nav-link active" to={"/" + lang + "/" + routesPath[lang].home}>
                                 {t('header.home')}
                             </Link>
+
                         </li>
-                        <Link className="nav-link" to={lang + "/" + routesPath[lang].about}>
+                        <Link className="nav-link" to={"/" + lang + "/" + routesPath[lang].about}>
                             {t('header.aboutMe')}
                         </Link>
+
                         <li className="nav-item">
-                            <Link className="nav-link" to={lang + "/" + routesPath[lang].contact}>
-                                {t('header.contact')}l
+                            <Link className="nav-link" to={"/" + lang + "/" + routesPath[lang].contact}>
+                                {t('header.contact')}
                             </Link>
+
                         </li>
                     </ul>
 

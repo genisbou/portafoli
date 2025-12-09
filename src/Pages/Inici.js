@@ -12,6 +12,8 @@ import img6 from '../assets/orderTicket-JaVA.png';
 import img7 from '../assets/icon-java.png';
 import img8 from '../assets/maven.svg';
 
+import CvGenis from '../assets/Genis-CV-es.pdf';
+
 import img9 from '../assets/dawguardia-admin.png';
 import img10 from '../assets/boostrap-logo.png';
 import {useTranslation} from "react-i18next";
@@ -40,7 +42,7 @@ const Inici = () => {
                     </p>
                 </div>
                 <a type="button" className="btn btn-light"
-                   href="/Genis-CV-es.pdf"
+                   href={CvGenis}
                    target="_blank"
                    rel="noopener noreferrer"
 

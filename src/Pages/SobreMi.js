@@ -3,6 +3,7 @@ import '../styles/styles.css'
 import Header from '../Components/Header';
 import Footer from '../Components/Footer';
 import {useTranslation} from "react-i18next";
+import imgPerfil from "../assets/imgPerfil.jpg";
 
 const SobreMi = () => {
     const [t, i18n] = useTranslation("global");
@@ -19,7 +20,7 @@ const SobreMi = () => {
                     {/* Presentació personal */}
                     <div className="col-md-4 text-center">
                         <img
-                            src="/imgPerfil.jpg"
+                            src={imgPerfil}
                             alt="Foto de perfil"
                             className="img-fluid rounded-circle shadow"
                             style={{maxWidth: '220px'}}

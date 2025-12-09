@@ -5,6 +5,7 @@ import '../styles/styles.css'
 import Header from '../Components/Header';
 import Footer from '../Components/Footer';
 import {useTranslation} from "react-i18next";
+import CvGenis from '../assets/Genis-CV-es.pdf';
 
 
 const Inici = () => {
@@ -78,7 +79,7 @@ const Inici = () => {
 
                                     <li className="list-group-item">
                                         <i className="bi bi-filetype-pdf" style={{fontSize: "22px"}}> </i>
-                                        <a href="/Genis-CV-es.pdf" target="_blank" style={{textDecoration: "none"}}>&nbsp;  {t('home.downloadCv')}</a>
+                                        <a href={CvGenis} target="_blank" style={{textDecoration: "none"}}>&nbsp;  {t('home.downloadCv')}</a>
 
                                     </li>
 
