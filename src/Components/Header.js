@@ -68,18 +68,16 @@ const NavigationBar = () => {
                 <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                         <li className="nav-item">
-                            <Link className="nav-link active" to={"/" + lang + "/" + routesPath[lang].home}>
+                            <Link className="nav-link active" to={lang + "/" + routesPath[lang].home}>
                                 {t('header.home')}
                             </Link>
                         </li>
+                        <Link className="nav-link" to={lang + "/" + routesPath[lang].about}>
+                            {t('header.aboutMe')}
+                        </Link>
                         <li className="nav-item">
-                            <Link className="nav-link" to={"/" + lang + "/" + routesPath[lang].about}>
-                                {t('header.aboutMe')}
-                            </Link>
-                        </li>
-                        <li className="nav-item">
-                            <Link className="nav-link" to={"/" + lang + "/" + routesPath[lang].contact}>
-                                {t('header.contact')}
+                            <Link className="nav-link" to={lang + "/" + routesPath[lang].contact}>
+                                {t('header.contact')}l
                             </Link>
                         </li>
                     </ul>
