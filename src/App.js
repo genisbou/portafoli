@@ -32,7 +32,7 @@ function App() {
 
                 {/* Anglès */}
                 <Route path="/en/home" element={<Inici />} />
-                <Route path="/en/about" element={<SobreMi />} />
+                <Route path="/en/about-me" element={<SobreMi />} />
                 <Route path="/en/contact" element={<Contacte />} />
 
                 {/* Fallback */}
