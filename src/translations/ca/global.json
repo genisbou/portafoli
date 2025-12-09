@@ -6,6 +6,12 @@
 
   },
 
+  "headerLink" :{
+    "home" : "inici",
+    "aboutMe" : "sobre-mi",
+    "contact" : "contacte"
+  },
+
   "footer": {
     "text" : "Creant experiències sorprenents i solucions innovadores per als nostres clients a tot el món.",
     "copy" : "Tots els drets reservats",

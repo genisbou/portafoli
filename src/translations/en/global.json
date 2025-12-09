@@ -5,6 +5,12 @@
     "contact": "CONTACT"
   },
 
+  "headerLink" :{
+    "home" : "home",
+    "aboutMe" : "about-me",
+    "contact" : "contact"
+  },
+
   "footer": {
     "text": "Creating amazing experiences and innovative solutions for our clients around the world.",
     "copy": "All rights reserved",

@@ -5,6 +5,12 @@
     "contact": "CONTACTO"
   },
 
+  "headerLink" :{
+    "home" : "inicio",
+    "aboutMe" : "sobre-mi",
+    "contact" : "contacto"
+  },
+
   "footer": {
     "text": "Creando experiencias sorprendentes y soluciones innovadoras para nuestros clientes en todo el mundo.",
     "copy": "Todos los derechos reservados",
