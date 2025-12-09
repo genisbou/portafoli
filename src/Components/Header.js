@@ -68,22 +68,22 @@ const NavigationBar = () => {
                 <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                         <li className="nav-item">
-                            <a className="nav-link active" href={"/" + lang + "/" + routesPath[lang].home}>
+                            <Link className="nav-link active" to={"/" + lang + "/" + routesPath[lang].home}>
                                 {t('header.home')}
-                            </a>
-
+                            </Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href={"/" + lang + "/" + routesPath[lang].about}>
+                            <Link className="nav-link" to={"/" + lang + "/" + routesPath[lang].about}>
                                 {t('header.aboutMe')}
-                            </a>
+                            </Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href={"/" + lang + "/" + routesPath[lang].contact}>
+                            <Link className="nav-link" to={"/" + lang + "/" + routesPath[lang].contact}>
                                 {t('header.contact')}
-                            </a>
+                            </Link>
                         </li>
                     </ul>
+
 
                     <div className="dropdown" style={{marginRight : "20px"}}>
                         <button className="btn btn-light dropdown-toggle" type="button" id="dropdownLang" data-bs-toggle="dropdown" aria-expanded="false">
