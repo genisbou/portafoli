@@ -6,12 +6,96 @@ import Header from '../Components/Header';
 import Footer from '../Components/Footer';
 import {useTranslation} from "react-i18next";
 import CvGenis from '../assets/Genis-CV-es.pdf';
+import styled,{css} from "styled-components";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faCheckCircle, faCircleExclamation} from "@fortawesome/free-solid-svg-icons";
+import {focus} from "@testing-library/user-event/dist/focus";
+
+const colors = {
+    borde: "#0075FF",
+    error: "#bb2929",
+    exit : "#1ed12d"
+}
+
+export const LeyendaError = styled.p`
+    font-size: 12px;
+    margin-bottom: 0;
+    color: ${colors.error};
+`;
+
+export const IconValidation = styled(FontAwesomeIcon)`
+    position: absolute;
+    right: 10px;
+    bottom: 14px;
+    z-index: 100;
+    font-size: 16px;
+`;
+
+export const Input = styled.input`
+    width: 100%;
+    background: #fff;
+    border-radius: 3px;
+    height: 45px;
+    line-height: 45px;
+    padding: 0 40px 0 10px;
+    transition: .3s ease all;
+    border: 3px solid transparent;
+
+    &:focus{
+        border: 3px solid ${colors.borde};
+        outline: none;
+        box-shadow: 3px 0px 30px rgba(163,163,163, 0.4);
+    }
+
+    ${props => props.valido === 'true' && css`
+        border: 3px solid ${colors.exit};
+    `}
+
+    ${props => props.valido === 'false' && css`
+        border: 3px solid ${colors.error};
+    `}
+`;
+
+export const Label = styled.label`
+    display: block;
+    font-weight: 700;
+    padding: 10px;
+    min-height: 40px;
+    cursor: pointer;
+
+    ${props => props.valido === 'false' && css`
+       color: ${colors.error};
+    `}
+`;
+
+
+
 
 
 const Inici = () => {
     const [t, i18n] = useTranslation("global");
     const form = useRef();
     const [showAlert, setShowAlert] = useState(false);
+    const [usuario, cambiarusuario] = useState({campo: '', valido: null});
+
+    const Expresiones = {
+        usuario: /^([A-Za-zÑñÁáÉéÍíÓóÚú]+[\w'\-]{0,1}[A-Za-zÑñÁáÉéÍíÓóÚú]+)(\s+([A-Za-zÑñÁáÉéÍíÓóÚú]+[\w'\-]{0,1}[A-Za-zÑñÁáÉéÍíÓóÚú]+))*$/
+    };
+
+
+
+    const onChange = (e) => {
+        cambiarusuario({...usuario, campo: e.target.value});
+    };
+
+    const validarUsuario = () => {
+        if(Expresiones.usuario.test(usuario.campo)){
+            cambiarusuario({...usuario, valido: 'true'});
+        } else {
+            cambiarusuario({...usuario, valido: 'false'});
+        }
+    }
+
 
     const handleSubmit = (event) => {
 
@@ -30,11 +114,9 @@ const Inici = () => {
             })
 
 
-
-
-
-
     }
+
+
     return (
         <>
             <Header/>
@@ -104,12 +186,38 @@ const Inici = () => {
                                                         <legend className="text-center header"> {t('contact.contact')}</legend>
 
                                                         <div className="form-group">
-                                                            <span className="col-md-1 col-md-offset-2 text-center"><i
-                                                                className="fa fa-user bigicon"></i></span>
+                                                            <Label htmlFor="username" valido={usuario.valido}>
+                                                                <i className="fa fa-user bigicon"></i> Nom
+                                                            </Label>
+
+
+
+                                                            <span className="col-md-1 col-md-offset-2 text-center"></span>
                                                             <div className="col-md-8">
-                                                                <input id="fname" name="username" type="text"
-                                                                       placeholder= {t('contact.name')}
-                                                                       className="form-control"/>
+                                                                <Input
+                                                                    type="text"
+
+                                                                    name="username"
+                                                                    placeholder={t('contact.name')}
+                                                                    value={usuario.campo}
+                                                                    onChange={onChange}
+                                                                    onKeyUp={validarUsuario}
+                                                                    onBlur={validarUsuario}
+                                                                    valido={usuario.valido}
+                                                                />
+
+                                                                {usuario.valido === 'true' && (
+                                                                    <IconValidation icon={faCheckCircle} style={{color: colors.exit}}/>
+                                                                )}
+
+                                                                {usuario.valido === 'false' && (
+                                                                    <>
+                                                                        <IconValidation icon={faCircleExclamation} style={{color: colors.error}}/>
+                                                                        <LeyendaError>
+                                                                            El nom no és vàlid.
+                                                                        </LeyendaError>
+                                                                    </>
+                                                                )}
                                                             </div>
                                                         </div>
 
@@ -151,6 +259,11 @@ const Inici = () => {
                                                                 <button type="submit"
                                                                         className="btn btn-primary btn-lg">{t('contact.submit')}
                                                                 </button>
+                                                                <p></p>
+                                                                <p>
+                                                                    <FontAwesomeIcon icon={faCircleExclamation} />
+                                                                    <strong>Error:</strong> Siusplau, ompli el formulari correctament.
+                                                                </p>
                                                             </div>
                                                         </div>
                                                     </fieldset>
@@ -160,7 +273,7 @@ const Inici = () => {
                                                 {/* Mensaje de confirmación con Bootstrap 5 */}
                                                 {showAlert && (
                                                     <div className="alert alert-success mt-3" role="alert">
-                                                        {t('message.Submit')}
+                                                        {t('contact.messageSubmit')}
                                                     </div>
                                                 )}
 
