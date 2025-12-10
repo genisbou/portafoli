@@ -51,7 +51,7 @@ const NavigationBar = () => {
         localStorage.setItem("lang", lng);
 
         if (routesPath[lng]) {
-            const newPath = "/" + lng + "/" + routesPath[lng][routeKeyFound]; 
+            const newPath = "/" + lng + "/" + routesPath[lng][routeKeyFound];
             navigate(newPath, { replace: true });
         }
     };
