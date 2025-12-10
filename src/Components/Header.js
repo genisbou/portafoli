@@ -29,17 +29,18 @@ const NavigationBar = () => {
 
     const lang =  localStorage.getItem("lang") || "ca";
     const url = window.location.pathname.split("/");
-   
+
 
     const changeLanguage = (lng) => {
-        const pathParts = window.location.pathname.split("/");
-        const oldLang = pathParts[1] || "ca";
+        const pathParts = window.location.pathname.split("/").filter(Boolean);
+        // pathParts = ["portafoli","ca","inici"]
+
+        const oldLang = pathParts[1] || "ca";        // ✅ idioma correcte
         const currentRouteName = pathParts[2] || routesPath[oldLang].home;
 
         let routeKeyFound = "home";
         if (routesPath[oldLang]) {
-            const keys = Object.keys(routesPath[oldLang]);
-            keys.forEach((key) => {
+            Object.keys(routesPath[oldLang]).forEach((key) => {
                 if (routesPath[oldLang][key] === currentRouteName) {
                     routeKeyFound = key;
                 }
@@ -50,10 +51,8 @@ const NavigationBar = () => {
         localStorage.setItem("lang", lng);
 
         if (routesPath[lng]) {
-            const newPath = "/" + lng + "/" + routesPath[lng][routeKeyFound];
-            navigate("/" + newPath );
-
-
+            const newPath = "/" + lng + "/" + routesPath[lng][routeKeyFound]; 
+            navigate(newPath, { replace: true });
         }
     };
 
@@ -72,17 +71,17 @@ const NavigationBar = () => {
                 <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                         <li className="nav-item">
-                            <Link className="nav-link active" to={"/" + lang + "/" + routesPath[lang].home}>
+                            <Link className="nav-link active" to={ "/" + lang + "/" + routesPath[lang].home}>
                                 {t('header.home')}
                             </Link>
 
                         </li>
-                        <Link className="nav-link" to={"/" + lang + "/" + routesPath[lang].about}>
+                        <Link className="nav-link" to={ "/" + lang + "/" + routesPath[lang].about}>
                             {t('header.aboutMe')}
                         </Link>
 
                         <li className="nav-item">
-                            <Link className="nav-link" to={"/" + lang + "/" + routesPath[lang].contact}>
+                            <Link className="nav-link" to={ "/" +   lang + "/" + routesPath[lang].contact}>
                                 {t('header.contact')}
                             </Link>
 
