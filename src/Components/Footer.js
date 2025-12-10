@@ -2,6 +2,7 @@ import React, {useEffect} from 'react';
 import '../styles/styles.css'
 import {useTranslation} from "react-i18next";
 import routesPath from "../routesPath";
+import {Link} from "react-router-dom";
 
 const Footer = () => {
     const [t, i18n] = useTranslation("global");
@@ -57,19 +58,19 @@ const Footer = () => {
                     <div className="col-md-6 text-md-end">
                         <ul className="footer-links">
                             <li>
-                                <a className="nav-link active" href={"/" + lang + "/" + routesPath[lang].home}>
+                                <Link className="nav-link active" to={ "/" + lang + "/" + routesPath[lang].home}>
                                     {t('footer.home')}
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a className="nav-link active" href={"/" + lang + "/" + routesPath[lang].about}>
+                                <Link className="nav-link" to={ "/" + lang + "/" + routesPath[lang].about}>
                                     {t('footer.aboutMe')}
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a className="nav-link active" href={"/" + lang + "/" + routesPath[lang].contact}>
+                                <Link className="nav-link" to={ "/" +   lang + "/" + routesPath[lang].contact}>
                                     {t('footer.contact')}
-                                </a>
+                                </Link>
                             </li>
 
                         </ul>
