@@ -38,6 +38,8 @@
     "descriptionOptica": "Equipment maintenance, operating system installation and software setup ensuring proper device operation.",
 
     "projects": "Projects",
+    "titlePortfolio" : "Personal Portfolio",
+    "descriptionPortfolio" : "This portfolio is built with React and is fully responsive, adapting to any device. It supports multiple languages and integrates EmailJS, so any contact through the form automatically sends an email with the visitor's details. The contact form includes real-time validation, error messages, and a character counter, offering a clear and functional user experience. The portfolio's code is available on GitHub.",
     "titleAlpicat": "Club Futbol Alpicat (Real Project)",
     "descriptionAlpicat": "Web application developed with PHP and the CodeIgniter 4 framework, with a MySQL database. The project allows users of any age to easily access all club information: check the latest results, view the standings of each category, read the latest news and updates, and access a private area for administrators. This admin panel enables easy and secure website content management. The design is intuitive and accessible, with a clear and functional structure. The project includes detailed technical documentation and the source code is available for review.",
     "code": "Source code",

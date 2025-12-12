@@ -40,6 +40,9 @@
     "descriptionOptica" : "Manteniment d’equips, instal·lació de sistemes operatius i programari, assegurant el bon funcionament dels dispositius.",
 
     "projects" : "Projectes",
+    "titlePortfolio" : "Portafoli personal",
+    "descriptionPortfolio" : "Aquest portafoli està desenvolupat amb React i és completament responsive, adaptant-se a qualsevol dispositiu. Està preparat per a multi-idioma i integra EmailJS, de manera que qualsevol contacte realitzat a través del formulari envia automàticament un correu electrònic amb les dades del visitant. El formulari de contacte inclou validacions en temps real, missatges d'error i un comptador de caràcters, oferint una experiència d'usuari clara i funcional. El codi del portafoli està disponible a GitHub.",
+
     "titleAlpicat" : "Club Futbol Alpicat (Projecte Real)",
     "descriptionAlpicat" : "Aplicació web desenvolupada amb PHP i el framework CodeIgniter 4, amb una base de dades MySQL. El projecte permet als usuaris de qualsevol edat accedir fàcilment a tota la informació del club de futbol: consultar els últims resultats, veure la classificació de cada categoria, llegir les novetats i notícies recents, i accedir a una zona privada per a administradors. Aquesta àrea d’administració permet gestionar el contingut del lloc web de manera senzilla i segura. El disseny està pensat per ser intuïtiu i accessible, amb una estructura clara i funcional. El projecte inclou documentació tècnica detallada i el codi font està disponible per a consulta.",
     "code" : "Codi font",
@@ -91,7 +94,7 @@
     "messageSubmit" : "Missatge enviat amb èxit!",
     "errorName" : "El nom no és vàlid.",
     "errorEmail" : "El correu no és vàlid.",
-    "errorTel" : "El telèfon no és vàñid.",
+    "errorTel" : "El telèfon no és vàlid.",
     "errorGeneral" : "Siusplau, ompli el formulari correctament.",
     "errorMessage" : "El missatge ha de tenir com a mínim 10 caràcters i com a màxim 500 caràcters."
   }

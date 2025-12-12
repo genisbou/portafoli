@@ -2,6 +2,9 @@ import React from 'react';
 import '../styles/styles.css'
 import Header from '../Components/Header';
 import Footer from '../Components/Footer';
+import imgPortfolio from '../assets/portfolioHome.jpg';
+import jsxLogo from '../assets/jsxLogo.png';
+import ReactLogo from '../assets/ReactLogo.png'
 import img1 from '../assets/banner-software.jpg';
 import img2 from '../assets/inici-fcalpicat.png';
 import img3 from '../assets/PHP-logo.svg.png';
@@ -13,6 +16,7 @@ import img7 from '../assets/icon-java.png';
 import img8 from '../assets/maven.svg';
 
 import CvGenis from '../assets/Genis-CV-es.pdf';
+import DocuAlpi from '../assets/memoria defenitiva.pdf'
 
 import img9 from '../assets/dawguardia-admin.png';
 import img10 from '../assets/boostrap-logo.png';
@@ -87,6 +91,35 @@ const Inici = () => {
                     {t('home.projects')}
                 </h3>
 
+
+                <div className="card">
+                    <img src={imgPortfolio}  alt="Imagen de Japón"/>
+                    <p></p>
+                    <div className="card-body">
+                        <h5 className="card-title"> {t('home.titlePortfolio')}</h5>
+                        <p className="card-text">
+                            {t('home.descriptionPortfolio')}
+                        </p>
+                        <img className="img-fluid logo-php" src={jsxLogo} alt="Imagen de Japón"/>
+                        <img className="img-fluid logo-php" src={img10} alt="Imagen de Japón"/>
+                        <img className="img-fluid logo-php" src={ReactLogo} alt="Imagen de Japón"/>
+
+                        <p></p>
+                        <a href="https://github.com/genisbou/portafoli/tree/main" target={"_blank"} className="btn btn-outline-secondary">
+                            <i className=" bi bi-code-slash"></i>
+                            &nbsp;  {t('home.code')}</a>
+                        <p>
+
+                        </p>
+
+
+                    </div>
+
+
+                </div>
+
+                <p></p>
+
                 <div className="card">
                     <img src={img2} alt="Imagen de Japón"/>
                     <div className="card-body">
@@ -99,7 +132,7 @@ const Inici = () => {
                         <img className="img-fluid logo-php" src={img5} alt="Imagen de Japón"/>
 
                         <p></p>
-                        <a href="https://github.com/AndreyPlakhov/Proyecto-Ci4" className="btn btn-outline-secondary">
+                        <a href="https://github.com/AndreyPlakhov/Proyecto-Ci4"  target={"_blank"}  className="btn btn-outline-secondary">
                             <i className=" bi bi-code-slash"></i>
                             &nbsp;  {t('home.code')}</a>
 
@@ -108,7 +141,7 @@ const Inici = () => {
                         </p>
 
                         <a
-                            href="/memoria%20defenitiva.docx.pdf"
+                            href={DocuAlpi}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="btn btn-outline-secondary"
@@ -123,7 +156,10 @@ const Inici = () => {
 
                 </div>
 
+
+
                 <p></p>
+
 
 
                 <div className="card">
@@ -139,7 +175,7 @@ const Inici = () => {
                         <img className="img-fluid logo-php" src={img8} alt="Imagen de Japón"/>
 
                         <p></p>
-                        <a href="https://github.com/genisbou/Gestor-Tiquets" className="btn btn-outline-secondary">
+                        <a href="https://github.com/genisbou/Gestor-Tiquets"  target={"_blank"}  className="btn btn-outline-secondary">
                             <i className=" bi bi-code-slash"></i>
                             &nbsp;  {t('home.code')}</a>
 
@@ -189,7 +225,7 @@ const Inici = () => {
 
 
                         <p></p>
-                        <a href="https://github.com/genisbou/daw2ci4-25-genis" className="btn btn-outline-secondary">
+                        <a href="https://github.com/genisbou/daw2ci4-25-genis"  target={"_blank"}  className="btn btn-outline-secondary">
                             <i className=" bi bi-code-slash"></i>
                             &nbsp; {t('home.code')}</a>
 
