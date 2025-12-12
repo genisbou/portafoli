@@ -25,8 +25,8 @@
 
   "home": {
     "title": "Benvingut al meu portafoli",
-    "presentation1": "Sóc Genís, tècnic de sistemes i operari especialitzat en paletització i maquinària automatitzada. Amb experiència en el sector logístic i formació en desenvolupament web, combino la precisió tècnica amb una gran capacitat d’adaptació.",
-    "presentation2": "Aquest espai recull el meu recorregut professional, les meves habilitats i projectes, amb l’objectiu de continuar creixent en entorns tecnològics i productius. Si busques algú compromès, meticulós i amb ganes d’aportar valor, estàs al lloc adequat.",
+    "presentation1": "Sóc en Genís, tècnic en sistemes informàtics i desenvolupador web junior. M’agrada la informàtica en tots els seus vessants, tant la part de programació com l’administració de sistemes i hardware.",
+    "presentation2": "En aquesta pàgina trobaràs una mica del meu recorregut, els meus coneixements i alguns projectes que he anat fent. Si busques algú responsable, amb ganes d’aprendre i créixer professionalment, ets al lloc adequat.",
     "downloadCv" : "Descarrega el meu CV",
 
     "titleWorks" : "Experiència laboral",
@@ -59,9 +59,9 @@
 
   "aboutMe": {
     "title" : "Sobre mi",
-    "presentation1" : "Hola! Sóc Genís Bou, tècnic en sistemes microinformàtics i xarxes i graduat en Desenvolupament d’Aplicacions Web (DAW). M’apassiona la tecnologia, l’automatització i la resolució de problemes, tant en entorns de programació com en maquinària industrial i sistemes informàtics.",
-    "presentation2" : "Sóc una persona constant, responsable i que aprèn ràpid. Disfruto treballant en equip i m’agrada mantenir una actitud proactiva, millorant processos i buscant noves solucions.",
-    "presentation3" : "Actualment em trobo expandint els meus coneixements en el món del desenvolupament web, aprenent frameworks moderns i reforçant conceptes de backend i bases de dades.",
+    "presentation1": "Hola! Sóc Genís Bou, tècnic en Administració de Sistemes Informàtics en Xarxa (ASIX) i graduat en Desenvolupament d’Aplicacions Web (DAW). M’interessen tant els sistemes —gestió d’equips, xarxes i infraestructura— com la programació, tant de backend com de frontend.",
+    "presentation2": "Sóc una persona constant, responsable i amb facilitat per aprendre. Disfruto treballant en equip i m’agrada mantenir una actitud proactiva, millorant processos i buscant noves solucions.",
+    "presentation3": "Actualment continuo ampliant coneixements en desenvolupament web, aprenent frameworks moderns i reforçant conceptes de backend, frontend i bases de dades, amb l’objectiu de créixer en aquest món web.",
 
     "titleTraining" : "Formació Acadèmica",
     "titleDaw" : "Cicle Superior en Desenvolupament d’Aplicacions Web – DAW",

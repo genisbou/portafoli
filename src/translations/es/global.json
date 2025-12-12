@@ -23,8 +23,8 @@
 
   "home": {
     "title": "Bienvenido a mi portafolio",
-    "presentation1": "Soy Genís, técnico de sistemas y operario especializado en paletización y maquinaria automatizada. Con experiencia en el sector logístico y formación en desarrollo web, combino la precisión técnica con una gran capacidad de adaptación.",
-    "presentation2": "Este espacio recoge mi trayectoria profesional, mis habilidades y proyectos, con el objetivo de seguir creciendo en entornos tecnológicos y productivos. Si buscas a alguien comprometido, meticuloso y con ganas de aportar valor, estás en el lugar adecuado.",
+    "presentation1": "Soy Genís, técnico en sistemas informáticos y desarrollador web junior. Me gusta la informática en todos sus aspectos, tanto la parte de programación como la administración de sistemas y hardware.",
+    "presentation2": "En esta página encontrarás un poco de mi recorrido, mis conocimientos y algunos proyectos que he realizado. Si buscas a alguien responsable, con ganas de aprender y crecer profesionalmente, estás en el lugar adecuado.",
     "downloadCv": "Descargar mi CV",
 
     "titleWorks": "Experiencia laboral",
@@ -59,9 +59,9 @@
 
   "aboutMe": {
     "title": "Sobre mí",
-    "presentation1": "¡Hola! Soy Genís Bou, técnico en sistemas microinformáticos y redes y graduado en Desarrollo de Aplicaciones Web (DAW). Me apasiona la tecnología, la automatización y la resolución de problemas, tanto en entornos de programación como en maquinaria industrial y sistemas informáticos.",
-    "presentation2": "Soy una persona constante, responsable y con facilidad para aprender rápido. Disfruto trabajando en equipo y me gusta mantener una actitud proactiva, mejorando procesos y buscando nuevas soluciones.",
-    "presentation3": "Actualmente estoy ampliando mis conocimientos en el mundo del desarrollo web, aprendiendo frameworks modernos y reforzando conceptos de backend y bases de datos.",
+    "presentation1": "¡Hola! Soy Genís Bou, técnico en Administración de Sistemas Informáticos en Red (ASIR) y graduado en Desarrollo de Aplicaciones Web (DAW). Me interesan tanto los sistemas —gestión de equipos, redes e infraestructura— como la programación, tanto backend como frontend.",
+    "presentation2": "Me considero una persona constante, responsable y con facilidad para aprender. Disfruto trabajando en equipo y me gusta mantener una actitud proactiva, mejorando procesos y buscando nuevas soluciones.",
+    "presentation3": "Actualmente continúo ampliando mis conocimientos en desarrollo web, aprendiendo frameworks modernos y reforzando conceptos de backend, frontend y bases de datos, con el objetivo de crecer en este mundo web.",
 
     "titleTraining": "Formación Académica",
     "titleDaw": "Grado Superior en Desarrollo de Aplicaciones Web – DAW",

@@ -23,8 +23,8 @@
 
   "home": {
     "title": "Welcome to my portfolio",
-    "presentation1": "I am Genís, a systems technician and operator specialized in palletizing and automated machinery. With experience in the logistics sector and training in web development, I combine technical precision with a great ability to adapt.",
-    "presentation2": "This space showcases my professional journey, skills, and projects, with the goal of continuing to grow in technological and productive environments. If you're looking for someone committed, meticulous, and motivated to bring value, you're in the right place.",
+    "presentation1": "I'm Genís, a computer systems technician and junior web developer. I enjoy computing in all its aspects, from programming to systems administration and hardware.",
+    "presentation2": "On this page, you'll find a bit about my background, my skills, and some projects I've worked on. If you're looking for someone responsible, eager to learn, and grow professionally, you're in the right place.",
     "downloadCv": "Download my CV",
 
     "titleWorks": "Work Experience",
@@ -59,9 +59,9 @@
 
   "aboutMe": {
     "title": "About me",
-    "presentation1": "Hi! I'm Genís Bou, a technician in microcomputer systems and networks, and graduated in Web Application Development (DAW). I am passionate about technology, automation, and problem-solving, both in programming environments and industrial machinery or IT systems.",
-    "presentation2": "I am a consistent, responsible person who learns quickly. I enjoy working in a team and I like to maintain a proactive attitude, improving processes and searching for new solutions.",
-    "presentation3": "I am currently expanding my knowledge in the web development world, learning modern frameworks and strengthening backend and database concepts.",
+    "presentation1": "Hi! I'm Genís Bou, a technician in Computer Systems Administration (ASIX) and a graduate in Web Application Development (DAW). I'm interested in both systems —managing equipment, networks, and infrastructure— and programming, including backend and frontend.",
+    "presentation2": "I consider myself a consistent and responsible person with a quick learning ability. I enjoy working in a team and maintaining a proactive attitude, improving processes and finding new solutions.",
+    "presentation3": "Currently, I continue expanding my knowledge in web development, learning modern frameworks and strengthening backend, frontend, and database concepts, aiming to grow in this web-oriented field.",
 
     "titleTraining": "Academic Background",
     "titleDaw": "Higher Degree in Web Application Development – DAW",
