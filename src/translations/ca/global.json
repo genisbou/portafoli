@@ -85,9 +85,15 @@
     "name" : "Nom",
     "email" : "Correu electrònic",
     "phone" : "Telèfon",
-    "message" :"Escriu el teu missatge aquí. Et respondrem el més aviat possible.",
+    "messagePh" :"Escriu el teu missatge aquí. Et respondrem el més aviat possible.",
+    "message" :"Missatge",
     "submit" : "Enviar",
-    "messageSubmit" : "Missatge enviat amb èxit!"
+    "messageSubmit" : "Missatge enviat amb èxit!",
+    "errorName" : "El nom no és vàlid.",
+    "errorEmail" : "El correu no és vàlid.",
+    "errorTel" : "El telèfon no és vàñid.",
+    "errorGeneral" : "Siusplau, ompli el formulari correctament.",
+    "errorMessage" : "El missatge ha de tenir com a mínim 10 caràcters i com a màxim 500 caràcters."
   }
 
 }

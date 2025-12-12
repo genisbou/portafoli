@@ -8,13 +8,14 @@ import {useTranslation} from "react-i18next";
 import CvGenis from '../assets/Genis-CV-es.pdf';
 import styled,{css} from "styled-components";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faCheckCircle, faCircleExclamation} from "@fortawesome/free-solid-svg-icons";
+import {faCheckCircle, faCircleExclamation, faTimesCircle} from "@fortawesome/free-solid-svg-icons";
 import {focus} from "@testing-library/user-event/dist/focus";
 
 const colors = {
     borde: "#0075FF",
     error: "#bb2929",
-    exit : "#1ed12d"
+    exit : "#1ed12d",
+    warn : "#ff8c00" // taronja avis
 }
 
 export const LeyendaError = styled.p`
@@ -23,13 +24,51 @@ export const LeyendaError = styled.p`
     color: ${colors.error};
 `;
 
+export const ErrorGeneral = styled.p`
+    color: ${colors.error};
+    font-weight: 600;
+    margin-top: 10px;
+`;
+
+export const Contador = styled.p`
+    font-size: 12px;
+    text-align: right;
+
+    ${props => props.warn && css`
+        color: ${colors.warn};
+        font-weight: 700;
+    `}
+`;
+
+
+
+
 export const IconValidation = styled(FontAwesomeIcon)`
     position: absolute;
     right: 10px;
     bottom: 14px;
     z-index: 100;
     font-size: 16px;
+    opacity: 0;
+    
+    ${props => props.valido === 'false' && css `
+        opacity: 1;
+        color: ${colors.error};
+        
+    `}
+
+    ${props => props.valido === 'true' && css `
+        opacity: 1;
+        color: ${colors.exit};
+        
+    `}
+    
+    
 `;
+export const GrupoInput = styled.div`
+    position: relative;
+`;
+
 
 export const Input = styled.input`
     width: 100%;
@@ -77,43 +116,98 @@ const Inici = () => {
     const form = useRef();
     const [showAlert, setShowAlert] = useState(false);
     const [usuario, cambiarusuario] = useState({campo: '', valido: null});
+    const [correo, cambiarCorreo] = useState({campo: '', valido: null});
+    const [telefono, cambiartelefono] = useState({campo: '', valido: null});
+    const [mensaje, cambiarMensaje] = useState({campo: '', valido: null});
 
-    const Expresiones = {
-        usuario: /^([A-Za-zÑñÁáÉéÍíÓóÚú]+[\w'\-]{0,1}[A-Za-zÑñÁáÉéÍíÓóÚú]+)(\s+([A-Za-zÑñÁáÉéÍíÓóÚú]+[\w'\-]{0,1}[A-Za-zÑñÁáÉéÍíÓóÚú]+))*$/
-    };
 
+    const expresiones = {
+
+        nombre: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras y espacios, pueden llevar acentos.
+        correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
+        telefono: /^[6789]\d{8}$/,
+        mensaje: /^.{10,500}$/  // mínim 10, màxim 500
+
+    } // Font : https://github.com/falconmasters/formulario-css-grid/blob/master/js/formulario.js
 
 
     const onChange = (e) => {
         cambiarusuario({...usuario, campo: e.target.value});
     };
 
+    const onChangeMail = (e) => {
+        cambiarCorreo({...correo, campo: e.target.value});
+    }
+    const onChangeTel = (e) => {
+        cambiartelefono({...telefono, campo: e.target.value});
+    }
+    const onChangeMensaje = (e) => {
+        cambiarMensaje({...mensaje, campo: e.target.value});
+    };
+
+
     const validarUsuario = () => {
-        if(Expresiones.usuario.test(usuario.campo)){
+        if(expresiones.nombre.test(usuario.campo)){
             cambiarusuario({...usuario, valido: 'true'});
         } else {
             cambiarusuario({...usuario, valido: 'false'});
         }
     }
 
+    const validarCoreo = () => {
+        if(expresiones.correo.test(correo.campo)){
+            cambiarCorreo({...correo, valido: 'true'});
+        } else {
+            cambiarCorreo({...correo, valido: 'false'});
+        }
+    }
+
+    const validarTel = () => {
+        if(expresiones.telefono.test(telefono.campo)){
+            cambiartelefono({...telefono, valido: 'true'});
+        } else {
+            cambiartelefono({...telefono, valido: 'false'});
+        }
+    }
+
+    const validarMensaje = () => {
+        if (mensaje.campo.length >= 10 && mensaje.campo.length <= 500) {
+            cambiarMensaje({...mensaje, valido: 'true'});
+        } else {
+            cambiarMensaje({...mensaje, valido: 'false'});
+        }
+    }
+
+
+
 
     const handleSubmit = (event) => {
 
         event.preventDefault();
 
-        const ServiceId = "service_0y3jslv";
-        const TemplateId = "template_ql1ziyr";
-        const PublicKey = "53HY72XwsBUU30KfL";
+        // Si algun camp té errors no enviar
+        // sino > SendForm
 
-        emailjs.sendForm(ServiceId, TemplateId, form.current , PublicKey)
-            .then(() => {
-                setShowAlert(true)
-            })
-            .catch(() => {
-                setShowAlert(true)
-            })
+        if (
+            usuario.valido !== 'true' ||
+            correo.valido !== 'true'  ||
+            telefono.valido !== 'true' ||
+            mensaje.valido !== 'true') {
 
+            setShowAlert(false)
+        } else {
+            const ServiceId = "service_0y3jslv";
+            const TemplateId = "template_ql1ziyr";
+            const PublicKey = "53HY72XwsBUU30KfL";
 
+            emailjs.sendForm(ServiceId, TemplateId, form.current , PublicKey)
+                .then(() => {
+                    setShowAlert(true)
+                })
+                .catch(() => {
+                    setShowAlert(true)
+                })
+        }
     }
 
 
@@ -187,68 +281,163 @@ const Inici = () => {
 
                                                         <div className="form-group">
                                                             <Label htmlFor="username" valido={usuario.valido}>
-                                                                <i className="fa fa-user bigicon"></i> Nom
+                                                                <i className="fa fa-user bigicon"></i> {t('contact.name')}
                                                             </Label>
 
 
 
                                                             <span className="col-md-1 col-md-offset-2 text-center"></span>
                                                             <div className="col-md-8">
-                                                                <Input
-                                                                    type="text"
+                                                                <GrupoInput>
+                                                                    <Input
+                                                                        type="text"
+                                                                        name="username"
+                                                                        placeholder={t('contact.name')}
+                                                                        value={usuario.campo}
+                                                                        onChange={onChange}
+                                                                        onKeyUp={validarUsuario}
+                                                                        onBlur={validarUsuario}
+                                                                        valido={usuario.valido}
+                                                                    />
 
-                                                                    name="username"
-                                                                    placeholder={t('contact.name')}
-                                                                    value={usuario.campo}
-                                                                    onChange={onChange}
-                                                                    onKeyUp={validarUsuario}
-                                                                    onBlur={validarUsuario}
-                                                                    valido={usuario.valido}
-                                                                />
-
-                                                                {usuario.valido === 'true' && (
-                                                                    <IconValidation icon={faCheckCircle} style={{color: colors.exit}}/>
-                                                                )}
+                                                                    <IconValidation
+                                                                        icon={usuario.valido === 'true' ? faCheckCircle : faTimesCircle}
+                                                                        valido={usuario.valido}
+                                                                    />
+                                                                </GrupoInput>
 
                                                                 {usuario.valido === 'false' && (
-                                                                    <>
-                                                                        <IconValidation icon={faCircleExclamation} style={{color: colors.error}}/>
-                                                                        <LeyendaError>
-                                                                            El nom no és vàlid.
-                                                                        </LeyendaError>
-                                                                    </>
+                                                                    <LeyendaError>
+                                                                        {t('contact.errorName')}
+                                                                    </LeyendaError>
                                                                 )}
                                                             </div>
                                                         </div>
 
 
                                                         <div className="form-group">
-                                                            <span className="col-md-1 col-md-offset-2 text-center"><i
+                                                            <Label htmlFor="email" valido={correo.valido}>
+                                                                <i className="fa fa-envelope"></i> {t('contact.email')}
+                                                            </Label>
+
+
+
+                                                            <span className="col-md-1 col-md-offset-2 text-center"></span>
+                                                            <div className="col-md-8">
+                                                                <GrupoInput>
+                                                                    <Input
+                                                                        type="email"
+                                                                        name="email"
+                                                                        placeholder={t('contact.email')}
+                                                                        value={correo.campo}
+                                                                        onChange={onChangeMail}
+                                                                        onKeyUp={validarCoreo}
+                                                                        onBlur={validarCoreo}
+                                                                        valido={correo.valido}
+                                                                    />
+
+                                                                    <IconValidation
+                                                                        icon={correo.valido === 'true' ? faCheckCircle : faTimesCircle}
+                                                                        valido={correo.valido}
+                                                                    />
+                                                                </GrupoInput>
+
+                                                                {correo.valido === 'false' && (
+                                                                    <LeyendaError>
+                                                                        {t('contact.errorEmail')}
+                                                                    </LeyendaError>
+                                                                )}
+
+                                                            {/*<span className="col-md-1 col-md-offset-2 text-center"><i
                                                                 className="fa fa-envelope"></i></span>
                                                             <div className="col-md-8">
                                                                 <input id="email" name="email" type="email"
                                                                        placeholder= {t('contact.email')}
-                                                                       className="form-control"/>
+                                                                       className="form-control"/>*/}
                                                             </div>
                                                         </div>
 
                                                         <div className="form-group">
-                                                            <span className="col-md-1 col-md-offset-2 text-center"><i
-                                                                className="fa fa-phone-square bigicon"></i></span>
+
+                                                            <Label htmlFor="phone" valido={telefono.valido}>
+                                                                <i className="fa fa-phone"></i> {t('contact.phone')}
+                                                            </Label>
+
+
+
+                                                            <span className="col-md-1 col-md-offset-2 text-center"></span>
                                                             <div className="col-md-8">
-                                                                <input id="phone" name="phone" type="tel"
-                                                                       placeholder={t('contact.phone')} className="form-control"/>
+                                                                <GrupoInput>
+                                                                    <Input
+                                                                        type="text"
+                                                                        name="username"
+                                                                        placeholder={t('contact.phone')}
+                                                                        value={telefono.campo}
+                                                                        onChange={onChangeTel}
+                                                                        onKeyUp={validarTel}
+                                                                        onBlur={validarTel}
+                                                                        valido={telefono.valido}
+                                                                    />
+
+                                                                    <IconValidation
+                                                                        icon={telefono.valido === 'true' ? faCheckCircle : faTimesCircle}
+                                                                        valido={telefono.valido}
+                                                                    />
+                                                                </GrupoInput>
+
+                                                                {telefono.valido === 'false' && (
+                                                                    <LeyendaError>
+                                                                        {t('contact.errorTel')}
+                                                                    </LeyendaError>
+                                                                )}
                                                             </div>
                                                         </div>
 
+
+
+                                                        {/*<input id="phone" name="phone" type="tel"
+                                                                       placeholder={t('contact.phone')}
+                                                                       className="form-control"/>*/}
+
+
+
                                                         <div className="form-group">
-                                                            <span className="col-md-1 col-md-offset-2 text-center"><i
-                                                                className="fa fa-pencil-square-o bigicon"></i></span>
+                                                            <Label htmlFor="message" valido={mensaje.valido}>
+                                                                <i class="bi bi-chat-text"></i>  {t('contact.message')}
+                                                            </Label>
+
                                                             <div className="col-md-8">
-                                                                <textarea className="form-control" id="message"
-                                                                          name="message"
-                                                                          placeholder= {t('contact.message')}
-                                                                          rows="7"></textarea>
+                                                                <GrupoInput>
+                                                                    <textarea
+                                                                        className="form-control"
+                                                                        id="message"
+                                                                        name="message"
+                                                                        placeholder={t('contact.messagePh')}
+                                                                        rows="7"
+                                                                        value={mensaje.campo}
+                                                                        onChange={onChangeMensaje}
+                                                                        onKeyUp={validarMensaje}
+                                                                        onBlur={validarMensaje}
+                                                                        style={{
+                                                                            border:
+                                                                                mensaje.valido === 'false'
+                                                                                    ? `3px solid ${colors.error}`
+                                                                                    : mensaje.valido === 'true'
+                                                                                        ? `3px solid ${colors.exit}`
+                                                                                        : '3px solid transparent'
+                                                                        }}
+                                                                    ></textarea>
+                                                                </GrupoInput>
+
+                                                                {/* Comptador amb avís */}
+                                                                <Contador warn={mensaje.campo.length > 450}>
+                                                                    {mensaje.campo.length}/500
+                                                                </Contador>
+
+                                                                {/* Error si passa de 500 o és massa curt */}
+                                                                {mensaje.valido === 'false' && (
+                                                                    <LeyendaError>{t('contact.errorMessage')}</LeyendaError>
+                                                                )}
                                                             </div>
                                                         </div>
 
@@ -257,12 +446,16 @@ const Inici = () => {
                                                         <div className="form-group">
                                                             <div className="col-md-12 text-center">
                                                                 <button type="submit"
-                                                                        className="btn btn-primary btn-lg">{t('contact.submit')}
+                                                                        className="btn btn-success w-100 mt-3">{t('contact.submit')}
                                                                 </button>
-                                                                <p></p>
                                                                 <p>
-                                                                    <FontAwesomeIcon icon={faCircleExclamation} />
-                                                                    <strong>Error:</strong> Siusplau, ompli el formulari correctament.
+                                                                    { (usuario.valido === 'false' || correo.valido === 'false' || telefono.valido === 'false' || mensaje.valido == 'false') && (
+                                                                        <ErrorGeneral>
+                                                                            <FontAwesomeIcon icon={faCircleExclamation} />
+                                                                            {t('contact.errorGeneral')}
+                                                                        </ErrorGeneral>
+                                                                    )}
+
                                                                 </p>
                                                             </div>
                                                         </div>

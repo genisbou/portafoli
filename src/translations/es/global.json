@@ -83,9 +83,16 @@
     "name": "Nombre",
     "email": "Correo electrónico",
     "phone": "Teléfono",
-    "message": "Escribe tu mensaje aquí. Te responderé lo antes posible.",
+    "messagePh": "Escribe tu mensaje aquí. Te responderé lo antes posible.",
+    "message" : "Mensaje",
     "submit": "Enviar",
-    "messageSubmit": "¡Mensaje enviado con éxito!"
+    "messageSubmit": "¡Mensaje enviado con éxito!",
+    "errorName" : "El nombre no es válido.",
+    "errorEmail" : "El correo no es válido.",
+    "errorTel" : "El teléfono no es válido.",
+    "errorGeneral": "Por favor, rellene el formulario correctamente.",
+    "errorMessage": "El mensaje debe tener al menos 10 caracteres y como máximo 500 caracteres."
+
   }
 
 
