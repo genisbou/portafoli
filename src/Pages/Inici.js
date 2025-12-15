@@ -33,11 +33,16 @@ const Inici = () => {
             <Header/>
 
 
-            <img className="banner" src={img1} alt="Imagen de Japón"/>
+            <div className="banner-wrapper">
+                <img className="banner" src={img1} alt="" />
+                <div className="banner-text">
+                    <h1>{t('home.title')}</h1>
+                </div>
+            </div>
+
             <div className="container">
                 <div className="inici">
 
-                    <h3>{t('home.title')}</h3>
                     <p>
                         {t('home.presentation1')}
                     </p>
