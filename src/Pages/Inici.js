@@ -49,6 +49,7 @@ const Inici = () => {
                    href={Cv}
                    target="_blank"
                    rel="noopener noreferrer"
+                   download={"Cv-Genis-es.pdf"}
 
                 > <i className="bi bi-file-earmark-person me-2"></i>
                     {t('home.downloadCv')}
