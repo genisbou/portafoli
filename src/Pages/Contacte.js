@@ -217,7 +217,7 @@ const Inici = () => {
 
             <div className="container">
 
-                <h3>{t('contact.title')} </h3>
+                <h3 className="titlePage" >{t('contact.title')} </h3>
                 <p>
                     {t('contact.description')}
                 </p>

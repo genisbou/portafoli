@@ -13,7 +13,7 @@ const SobreMi = () => {
 
             <div className="container mt-4">
 
-                <h3><i className="bi bi-person-circle me-2"></i>{t('aboutMe.title')}</h3>
+                <h3 className="titlePage" ><i className="bi bi-person-circle me-2"></i>{t('aboutMe.title')}</h3>
 
                 <div className="row mt-4">
 
