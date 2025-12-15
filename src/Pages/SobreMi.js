@@ -22,7 +22,7 @@ const SobreMi = () => {
                         <img
                             src={imgPerfil}
                             alt="Foto de perfil"
-                            className="img-fluid rounded-circle shadow"
+                            className="img-fluid rounded-circle shadow img-thumbnail"
                             style={{maxWidth: '220px'}}
                         />
                     </div>
@@ -45,29 +45,33 @@ const SobreMi = () => {
                 <hr className="my-4"/>
 
                 {/* Formació */}
-                <h4><i className="bi bi-mortarboard me-2"></i>{t('aboutMe.titleTraining')}</h4>
 
-                <ul className="list-group list-group-flush mb-4">
-                    <li className="list-group-item">
-                        <strong>{t('aboutMe.titleDaw')}</strong><br/>
-                        Institut Caparrella, Lleida (2024 - 2025)
-                    </li>
+                <section className="">
+                    <h4><i className="bi bi-mortarboard me-2"></i>{t('aboutMe.titleTraining')}</h4>
 
-                    <li className="list-group-item">
-                        <strong>{t('aboutMe.titleAsix')}</strong><br/>
-                        Institut Caparrella, Lleida (2022 - 2024)
-                    </li>
+                    <ul className="list-group list-group-flush mb-4">
+                        <li className="list-group-item">
+                            <strong>{t('aboutMe.titleDaw')}</strong><br/>
+                            Institut Caparrella, Lleida (2024 - 2025)
+                        </li>
 
-                    <li className="list-group-item">
-                        <strong>{t('aboutMe.titleSmx')}</strong><br/>
-                        Institut Caparrella, Lleida (2019 - 2022)
-                    </li>
+                        <li className="list-group-item">
+                            <strong>{t('aboutMe.titleAsix')}</strong><br/>
+                            Institut Caparrella, Lleida (2022 - 2024)
+                        </li>
 
-                    {/*<li className="list-group-item">
+                        <li className="list-group-item">
+                            <strong>{t('aboutMe.titleSmx')}</strong><br/>
+                            Institut Caparrella, Lleida (2019 - 2022)
+                        </li>
+
+                        {/*<li className="list-group-item">
                         <strong>Formació complementària</strong><br/>
                         Cursos de  ..
                     </li>*/}
-                </ul>
+                    </ul>
+                </section>
+
 
                 <hr className="my-4"/>
 
@@ -76,32 +80,32 @@ const SobreMi = () => {
 
                 <div className="row text-center mt-3">
 
-                    <div className="col-6 col-md-3 mb-3">
+                    <div className="col-6 col-md-3 mb-3 icono">
                         <i className="bi bi-filetype-php fs-1"></i>
                         <p>PHP / CodeIgniter 4</p>
                     </div>
 
-                    <div className="col-6 col-md-3 mb-3">
+                    <div className="col-6 col-md-3 mb-3 icono">
                         <i className="bi bi-filetype-js fs-1"></i>
                         <p>JavaScript / React</p>
                     </div>
 
-                    <div className="col-6 col-md-3 mb-3">
+                    <div className="col-6 col-md-3 mb-3 icono">
                         <i className="bi bi-database fs-1"></i>
                         <p>MySQL</p>
                     </div>
 
-                    <div className="col-6 col-md-3 mb-3">
+                    <div className="col-6 col-md-3 mb-3 icono">
                         <i className="bi bi-terminal fs-1"></i>
                         <p>Java / Maven</p>
                     </div>
 
-                    <div className="col-6 col-md-3 mb-3">
+                    <div className="col-6 col-md-3 mb-3 icono">
                         <i className="bi bi-laptop fs-1"></i>
                         <p>Windows, Linux, {t('aboutMe.networking')}</p>
                     </div>
 
-                    <div className="col-6 col-md-3 mb-3">
+                    <div className="col-6 col-md-3 mb-3 icono">
                         <i className="bi bi-git fs-1"></i>
                         <p>Git / GitHub</p>
                     </div>
