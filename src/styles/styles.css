@@ -93,6 +93,12 @@ body {
     padding-top: 85px;
 }
 
+@media (max-width: 768px) {
+    body {
+        padding-top: 95px;
+    }
+}
+
 
 .navbar-toggler {
     border-color: rgba(255,255,255,0.5);
