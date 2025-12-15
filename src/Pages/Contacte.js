@@ -5,7 +5,7 @@ import '../styles/styles.css'
 import Header from '../Components/Header';
 import Footer from '../Components/Footer';
 import {useTranslation} from "react-i18next";
-import CvGenis from '../assets/Genis-CV-es.pdf';
+import Cv from '../assets/Cv-es-Genis.pdf';
 import styled,{css} from "styled-components";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faCheckCircle, faCircleExclamation, faTimesCircle} from "@fortawesome/free-solid-svg-icons";
@@ -255,7 +255,7 @@ const Inici = () => {
 
                                     <li className="list-group-item">
                                         <i className="bi bi-filetype-pdf" style={{fontSize: "22px"}}> </i>
-                                        <a href={CvGenis} target="_blank" style={{textDecoration: "none"}}>&nbsp;  {t('home.downloadCv')}</a>
+                                        <a href={Cv} target="_blank" style={{textDecoration: "none"}}>&nbsp;  {t('home.downloadCv')}</a>
 
                                     </li>
 

@@ -15,7 +15,7 @@ import img6 from '../assets/orderTicket-JaVA.png';
 import img7 from '../assets/icon-java.png';
 import img8 from '../assets/maven.svg';
 
-import CvGenis from '../assets/Cv-es-Genis.pdf';
+import Cv from '../assets/Cv-es-Genis.pdf';
 import DocuAlpi from '../assets/memoria defenitiva.pdf'
 
 import img9 from '../assets/dawguardia-admin.png';
@@ -46,7 +46,7 @@ const Inici = () => {
                     </p>
                 </div>
                 <a type="button" className="btn btn-light"
-                   href={CvGenis}
+                   href={Cv}
                    target="_blank"
                    rel="noopener noreferrer"
 
