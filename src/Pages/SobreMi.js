@@ -46,7 +46,7 @@ const SobreMi = () => {
 
                 {/* Formació */}
 
-                <section className="">
+                <section className="card p-4 mb-4">
                     <h4><i className="bi bi-mortarboard me-2"></i>{t('aboutMe.titleTraining')}</h4>
 
                     <ul className="list-group list-group-flush mb-4">
@@ -115,11 +115,13 @@ const SobreMi = () => {
                 <hr className="my-4"/>
 
                 {/* Objectius professionals */}
+                <section className="card p-4 mb-4">
                 <h4><i className="bi bi-flag me-2"></i>{t('aboutMe.objectives')}</h4>
 
                 <p>
                     {t('aboutMe.objectivesText')}
                 </p>
+                </section>
 
             </div>
 

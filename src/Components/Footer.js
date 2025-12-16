@@ -58,7 +58,7 @@ const Footer = () => {
                     <div className="col-md-6 text-md-end">
                         <ul className="footer-links">
                             <li>
-                                <Link className="nav-link active" to={ "/" + lang + "/" + routesPath[lang].home}>
+                                <Link className="nav-link" to={ "/" + lang + "/" + routesPath[lang].home}>
                                     {t('footer.home')}
                                 </Link>
                             </li>

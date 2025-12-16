@@ -3,6 +3,8 @@ import '../styles/styles.css';
 import { useTranslation } from "react-i18next";
 import routesPath from "../routesPath";
 import {Link, useNavigate} from "react-router-dom";
+import { NavLink } from "react-router-dom";
+
 
 
 const NavigationBar = () => {
@@ -71,19 +73,21 @@ const NavigationBar = () => {
                 <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                         <li className="nav-item">
-                            <Link className="nav-link active" to={ "/" + lang + "/" + routesPath[lang].home}>
+                            <NavLink className="nav-link " to={ "/" + lang + "/" + routesPath[lang].home}
+
+                            end>
                                 {t('header.home')}
-                            </Link>
+                            </NavLink>
 
                         </li>
-                        <Link className="nav-link" to={ "/" + lang + "/" + routesPath[lang].about}>
+                        <NavLink className="nav-link" to={ "/" + lang + "/" + routesPath[lang].about}>
                             {t('header.aboutMe')}
-                        </Link>
+                        </NavLink>
 
                         <li className="nav-item">
-                            <Link className="nav-link" to={ "/" +   lang + "/" + routesPath[lang].contact}>
+                            <NavLink className="nav-link" to={ "/" +   lang + "/" + routesPath[lang].contact}>
                                 {t('header.contact')}
-                            </Link>
+                            </NavLink>
 
                         </li>
                     </ul>
