@@ -43,7 +43,7 @@ const Inici = () => {
             <div className="container">
                 <div className="inici">
 
-                    <p>
+                    <p style={{marginTop: "25px"}}>
                         {t('home.presentation1')}
                     </p>
                     <p>
