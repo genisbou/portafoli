@@ -1,9 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+
 import {
     BrowserRouter as Router,
-    Routes, Route
+    Routes, Route, Navigate
 } from "react-router-dom";
 
 import Component from "./Components/Header";
@@ -20,8 +21,10 @@ function App() {
         <Router basename="/portafoli">
             <Routes>
                 {/* Català */}
-                <Route path="/" element={<Inici />} />
-                <Route path="/ca" element={<Inici />} />
+                {/* QUAN ENTRES A / → REDIRECT AUTOMÀTIC */}
+                <Route path="/" element={<Navigate to="/ca/inici" />} />
+
+                <Route path="/ca/inici" element={<Inici />} />
                 <Route path="/ca/sobre-mi" element={<SobreMi />} />
                 <Route path="/ca/contacte" element={<Contacte />} />
 
@@ -37,6 +40,7 @@ function App() {
 
                 {/* Fallback */}
                 <Route path="*" element={<Inici />} />
+
             </Routes>
         </Router>
 

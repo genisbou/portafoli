@@ -37,7 +37,7 @@ const NavigationBar = () => {
         const pathParts = window.location.pathname.split("/").filter(Boolean);
         // pathParts = ["portafoli","ca","inici"]
 
-        const oldLang = pathParts[1] || "ca";        // ✅ idioma correcte
+        const oldLang = pathParts[1] || "ca";
         const currentRouteName = pathParts[2] || routesPath[oldLang].home;
 
         let routeKeyFound = "home";
