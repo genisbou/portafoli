@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portafoli/static/css/main.1eb9afc1.css",
-    "main.js": "/portafoli/static/js/main.8c65e834.js",
+    "main.js": "/portafoli/static/js/main.9818aa90.js",
     "static/js/453.302684c8.chunk.js": "/portafoli/static/js/453.302684c8.chunk.js",
     "static/media/memoria defenitiva.pdf": "/portafoli/static/media/memoria defenitiva.73b754ed0ace587fa7e3.pdf",
     "static/media/inici-fcalpicat.png": "/portafoli/static/media/inici-fcalpicat.0703013e326017d460d1.png",
@@ -21,11 +21,11 @@
     "static/media/logo.svg": "/portafoli/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/portafoli/index.html",
     "main.1eb9afc1.css.map": "/portafoli/static/css/main.1eb9afc1.css.map",
-    "main.8c65e834.js.map": "/portafoli/static/js/main.8c65e834.js.map",
+    "main.9818aa90.js.map": "/portafoli/static/js/main.9818aa90.js.map",
     "453.302684c8.chunk.js.map": "/portafoli/static/js/453.302684c8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1eb9afc1.css",
-    "static/js/main.8c65e834.js"
+    "static/js/main.9818aa90.js"
   ]
 }
