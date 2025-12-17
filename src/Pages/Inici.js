@@ -61,37 +61,39 @@ const Inici = () => {
                 </a>
 
                 <p></p>
+                <section className="card p-4 mb-4">
+                    <h3>
+                        <i className="bi bi-building"></i>
+                        {t('home.titleWorks')}
 
-                <h3>
-                    <i className="bi bi-building"></i>
-                    {t('home.titleWorks')}
+                    </h3>
 
-                </h3>
+                    <ul className="list-group list-group-flush">
 
-                <ul className="list-group list-group-flush">
+                        <li className="list-group-item">
+                            <strong>{t('home.titleYepes')}</strong> (06/2024 – 11/2024, Alcarràs)<br/>
+                            {t('home.descriptionYepes')}
+                        </li>
 
-                    <li className="list-group-item">
-                        <strong>{t('home.titleYepes')}</strong> (06/2024 – 11/2024, Alcarràs)<br/>
-                        {t('home.descriptionYepes')}
-                    </li>
+                        <li className="list-group-item">
+                            <strong>{t('home.titleTorres')}</strong> (10/2024 - 03/2025, Torres de Segre)<br/>
+                            {t('home.descriptionTorres')}
 
-                    <li className="list-group-item">
-                        <strong>{t('home.titleTorres')}</strong> (10/2024 - 03/2025, Torres de Segre)<br/>
-                        {t('home.descriptionTorres')}
+                        </li>
 
-                    </li>
+                        <li className="list-group-item">
+                            <strong>{t('home.titleCapa')}</strong> (06/2023 - 12/2023, Lleida)<br/>
+                            {t('home.descriptionCapa')}
+                        </li>
+                        <li className="list-group-item">
+                            <strong>{t('home.titleOptica')}</strong> (02/2021 - 05/2021, Torrefarrera)<br/>
+                            {t('home.descriptionOptica')}
+                        </li>
+                    </ul>
 
-                    <li className="list-group-item">
-                        <strong>{t('home.titleCapa')}</strong> (06/2023 - 12/2023, Lleida)<br/>
-                        {t('home.descriptionCapa')}
-                    </li>
-                    <li className="list-group-item">
-                        <strong>{t('home.titleOptica')}</strong> (02/2021 - 05/2021, Torrefarrera)<br/>
-                        {t('home.descriptionOptica')}
-                    </li>
-                </ul>
+                    <p></p>
+                </section>
 
-                <p></p>
                 <h3>
                     <i className="bi bi-file-earmark-code"></i>
                     {t('home.projects')}
