@@ -108,5 +108,5 @@ React que no ens interessi.
 Aquest portafoli no busca ser només visual, sinó demostrar:
 * Bones pràctiques en React
 * Cura pel disseny i la tipografia
-* Atenció a l’experiència d’usuari
+* Cura de l’experiència d’usuari
 * Capacitat de documentar decisions tècniques
