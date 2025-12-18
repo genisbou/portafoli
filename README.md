@@ -1,112 +1,109 @@
-# Documentació portafoli personal - Genís Bou Majós
+# Documentación portafolio personal - Genís Bou Majós
 
-Aquest projecte és el meu portafoli personal, desenvolupat amb React i Bootstrap 5, amb suport multilingüe (CA / ES / EN) mitjançant react-i18next.
-L’objectiu és presentar el meu perfil, experiència i projectes d’una manera clara, responsive i professional.
+Este proyecto es mi portafolio personal, desarrollado con React y Bootstrap 5, con soporte multilingüe (CA / ES / EN) mediante react-i18next.  
+El objetivo es presentar mi perfil, experiencia y proyectos de una manera clara, responsive y profesional.
 
-## Disseny i estils
+## Diseño y estilos
 
-### Tipografia
-S’utilitza una tipografia moderna i llegible com a base del projecte:
+### Tipografía
+Se utiliza una tipografía moderna y legible como base del proyecto:
 
-```
-body {
-    font-family: 'Inter', system-ui, sans-serif;
-}
-```
+    body {
+        font-family: 'Inter', system-ui, sans-serif;
+    }
 
-* Inter: font principal del projecte, moderna i molt llegible.
-* System-ui: font de sistema del sistema operatiu
-* Sans-serif: font genèrica com a última opció
+* Inter: fuente principal del proyecto, moderna y muy legible.
+* System-ui: fuente del sistema operativo
+* Sans-serif: fuente genérica como última opción
 
-Els títols (h1, h2, h3) tenen un pes lleugerament superior per reforçar la jerarquia visual.
+Los títulos (h1, h2, h3) tienen un peso ligeramente superior para reforzar la jerarquía visual.
 
-Els paràgrafs mantenen un line-height còmode per millorar la llegibilitat.
+Los párrafos mantienen un line-height cómodo para mejorar la legibilidad.
 
-```
-h1, h2, h3 {
-    font-weight: 600;
-}
+    h1, h2, h3 {
+        font-weight: 600;
+    }
 
-p {
-    font-weight: 400;
-    line-height: 1.6;
-}
-```
-### Paleta de colors
+    p {
+        font-weight: 400;
+        line-height: 1.6;
+    }
 
-Pensada per un portafoli seriós i professional
+### Paleta de colores
 
-* Header/Capçalera: degradat amb gris-blau per donar contrast i elegància
-    ```
+Pensada para un portafolio serio y profesional.
+
+* Header/Cabecera: degradado con gris-azulado para aportar contraste y elegancia
+
+``` 
   .navbar {
-    background: linear-gradient(90deg, #1f2937, #374151);
+  background: linear-gradient(90deg, #1f2937, #374151);
+  } 
+  ```
+
+* Color de acento: azul utilizado en hover de iconos, enlaces a redes sociales, etc.
+
+``` 
+ .social-link:hover {
+  color: #0d6efd;
+  }
+  ```
+
+* Contenido: blanco y gris oscuro `#333333` para una mejor lectura
+
+## Navegación activa
+La página actual se marca visualmente para mejorar la experiencia de usuario:
+
+    .active {
+        color: #007bff;
+        border-bottom: 2px solid #007bff;
+        padding: 2px 0;
     }
-    ```
-* Color d'accent: Un blau usat hover d'icones, enllaços a xarxes socials , etc.
-    ```
-    .social-link:hover {
-    color: #0d6efd;
-    }
-    ```
-* Contingut: Blanc i gris clar  ``` #333333 ``` per una millor lectura
 
-##  Navegació activa
-La pàgina actual es marca visualment per millorar l’experiència d’usuari:
-```
-.active {
-color: #007bff;
-border-bottom: 2px solid #007bff;
-padding: 2px 0;
-}
- ```
+## Diseño responsive
+El proyecto es totalmente responsive, adaptándose automáticamente a las características de cualquier dispositivo o pantalla.
 
-## Disseny responsiu
-El projecte és totalment responsiu adaptant-se automàticament a les caraccterístiques de qualsevol dispositiu o pantalla
-
-* Textos centrats
-* Banner amb object-fit: cover
-* navbar-collapse en dispositius mòbils
+* Textos centrados
+* Banner con `object-fit: cover`
+* `navbar-collapse` en dispositivos móviles
 * Bootstrap Grid
 
-## Estructura del projecte
-1. Components reutilitzables:
-  * Header
-  * Footer
+## Estructura del proyecto
+1. Componentes reutilizables:
+    * Header
+    * Footer
 
-2. Pàgines
-* Inici
-* Sobre mi
-* Contacte
+2. Páginas
+    * Inicio
+    * Sobre mí
+    * Contacto
 
 3. Assets
-* Imatges
-* Documents
+    * Imágenes
+    * Documentos
 
-## Internacionalització
-El projecte utilitza react-i18next per gestionar idiomes.
-* L’idioma de l’aplicació es determina principalment a partir de la URL (/ca, /es, /en).
-En cas que la URL no contingui cap idioma, es recupera l’últim idioma seleccionat des de localStorage, amb català com a idioma per defecte.
+## Internacionalización
+El proyecto utiliza react-i18next para gestionar los idiomas.
 
-Quan l’usuari canvia d’idioma, es manté la mateixa secció del lloc web, redirigint a la ruta equivalent en el nou idioma.
-    
-## Descàrrega de documents
-Els documents es serveixen mitjançant l'atribut 
-```download``` , amb un nom d'arxiu específic amb què es 
-desarà el fitxer quan es baixi, evitant així el nom de 
-l'arxiu del servidor o qualsevol altre nom generat per 
-React que no ens interessi.
+* El idioma de la aplicación se determina principalmente a partir de la URL (`/ca`, `/es`, `/en`).
+* En caso de que la URL no contenga ningún idioma, se recupera el último idioma seleccionado desde `localStorage`, siendo el catalán el idioma por defecto.
 
-```
-  <a type="button" className="btn btn-light"
-                   href={Cv}
-                   target="_blank"
-                   rel="noopener noreferrer"
-                   download={"Cv-Genis-es.pdf"}
-                >
-```
-## Objectiu del projecte
-Aquest portafoli no busca ser només visual, sinó demostrar:
-* Bones pràctiques en React
-* Cura pel disseny i la tipografia
-* Cura de l’experiència d’usuari
-* Capacitat de documentar decisions tècniques
+Cuando el usuario cambia de idioma, se mantiene la misma sección del sitio web, redirigiendo a la ruta equivalente en el nuevo idioma.
+
+## Descarga de documentos
+Los documentos se sirven mediante el atributo `download`, con un nombre de archivo específico con el que se guardará el fichero al descargarse, evitando así el nombre del archivo del servidor o cualquier otro nombre generado por React que no nos interese.
+
+    <a type="button" className="btn btn-light"
+       href={Cv}
+       target="_blank"
+       rel="noopener noreferrer"
+       download={"Cv-Genis-es.pdf"}
+    >
+
+## Objetivo del proyecto
+Este portafolio no busca ser solo visual, sino demostrar:
+
+* Buenas prácticas en React
+* Cuidado por el diseño y la tipografía
+* Cuidado de la experiencia de usuario
+* Capacidad de documentar decisiones técnicas
