@@ -29,7 +29,7 @@
 .footer-brand {
     font-size: 1.5rem;
     font-weight: 600;
-    color: #333;
+    color: #333333;
     margin-bottom: 15px;
 }
 
@@ -92,6 +92,7 @@
 /*PROVES */
 .navbar {
     background: linear-gradient(90deg, #1f2937, #374151);
+    /*font : https://www.w3schools.com/cssref/tryit.php?filename=trycss3_gradient-linear_angles*/
     box-shadow: 0 2px 10px rgba(0,0,0,0.15);
 }
 body {
@@ -99,7 +100,7 @@ body {
 }
 
 .card {
-    background-color: #f5f5f5; /* Fondo */
+    background-color: #f5f5f5; /* Fons */
     color: #333333;            /* Contrast */
 
 }
@@ -200,4 +201,20 @@ body {
 .card img {
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
+}
+
+/*tipografia*/
+
+body {
+    font-family: 'Inter', system-ui, sans-serif;
+
+}
+
+h1, h2, h3 {
+    font-weight: 600;
+}
+
+p {
+    font-weight: 400;
+    line-height: 1.6;
 }

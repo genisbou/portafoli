@@ -1,70 +1,112 @@
-# Getting Started with Create React App
+# Documentació portafoli personal - Genís Bou Majós
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Aquest projecte és el meu portafoli personal, desenvolupat amb React i Bootstrap 5, amb suport multilingüe (CA / ES / EN) mitjançant react-i18next.
+L’objectiu és presentar el meu perfil, experiència i projectes d’una manera clara, responsive i professional.
 
-## Available Scripts
+## Disseny i estils
 
-In the project directory, you can run:
+### Tipografia
+S’utilitza una tipografia moderna i llegible com a base del projecte:
 
-### `npm start`
+```
+body {
+    font-family: 'Inter', system-ui, sans-serif;
+}
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+* Inter: font principal del projecte, moderna i molt llegible.
+* System-ui: font de sistema del sistema operatiu
+* Sans-serif: font genèrica com a última opció
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Els títols (h1, h2, h3) tenen un pes lleugerament superior per reforçar la jerarquia visual.
 
-### `npm test`
+Els paràgrafs mantenen un line-height còmode per millorar la llegibilitat.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
+h1, h2, h3 {
+    font-weight: 600;
+}
 
-### `npm run build`
+p {
+    font-weight: 400;
+    line-height: 1.6;
+}
+```
+### Paleta de colors
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Pensada per un portafoli seriós i professional
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+* Header/Capçalera: degradat amb gris-blau per donar contrast i elegància
+    ```
+  .navbar {
+    background: linear-gradient(90deg, #1f2937, #374151);
+    }
+    ```
+* Color d'accent: Un blau usat hover d'icones, enllaços a xarxes socials , etc.
+    ```
+    .social-link:hover {
+    color: #0d6efd;
+    }
+    ```
+* Contingut: Blanc i gris clar  ``` #333333 ``` per una millor lectura
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+##  Navegació activa
+La pàgina actual es marca visualment per millorar l’experiència d’usuari:
+```
+.active {
+color: #007bff;
+border-bottom: 2px solid #007bff;
+padding: 2px 0;
+}
+ ```
 
-### `npm run eject`
+## Disseny responsiu
+El projecte és totalment responsiu adaptant-se automàticament a les caraccterístiques de qualsevol dispositiu o pantalla
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+* Textos centrats
+* Banner amb object-fit: cover
+* navbar-collapse en dispositius mòbils
+* Bootstrap Grid
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Estructura del projecte
+1. Components reutilitzables:
+  * Header
+  * Footer
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+2. Pàgines
+* Inici
+* Sobre mi
+* Contacte
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+3. Assets
+* Imatges
+* Documents
 
-## Learn More
+## Internacionalització
+El projecte utilitza react-i18next per gestionar idiomes.
+* L’idioma de l’aplicació es determina principalment a partir de la URL (/ca, /es, /en).
+En cas que la URL no contingui cap idioma, es recupera l’últim idioma seleccionat des de localStorage, amb català com a idioma per defecte.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Quan l’usuari canvia d’idioma, es manté la mateixa secció del lloc web, redirigint a la ruta equivalent en el nou idioma.
+    
+## Descàrrega de documents
+Els documents es serveixen mitjançant l'atribut 
+```download``` , amb un nom d'arxiu específic amb què es 
+desarà el fitxer quan es baixi, evitant així el nom de 
+l'arxiu del servidor o qualsevol altre nom generat per 
+React que no ens interessi.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```
+  <a type="button" className="btn btn-light"
+                   href={Cv}
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   download={"Cv-Genis-es.pdf"}
+                >
+```
+## Objectiu del projecte
+Aquest portafoli no busca ser només visual, sinó demostrar:
+* Bones pràctiques en React
+* Cura pel disseny i la tipografia
+* Atenció a l’experiència d’usuari
+* Capacitat de documentar decisions tècniques

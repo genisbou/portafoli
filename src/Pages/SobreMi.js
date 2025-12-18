@@ -47,7 +47,7 @@ const SobreMi = () => {
                 {/* Formació */}
 
                 <section className="card p-4 mb-4">
-                    <h4><i className="bi bi-mortarboard me-2"></i>{t('aboutMe.titleTraining')}</h4>
+                    <h3><i className="bi bi-mortarboard me-2"></i>{t('aboutMe.titleTraining')}</h3>
 
                     <ul className="list-group list-group-flush mb-4">
                         <li className="list-group-item">
@@ -76,7 +76,7 @@ const SobreMi = () => {
                 <hr className="my-4"/>
 
                 {/* Habilitats */}
-                <h4><i className="bi bi-gear-wide-connected me-2"></i>{t('aboutMe.skills')}</h4>
+                <h3><i className="bi bi-gear-wide-connected me-2"></i>{t('aboutMe.skills')}</h3>
 
                 <div className="row text-center mt-3">
 
@@ -116,7 +116,7 @@ const SobreMi = () => {
 
                 {/* Objectius professionals */}
                 <section className="card p-4 mb-4">
-                <h4><i className="bi bi-flag me-2"></i>{t('aboutMe.objectives')}</h4>
+                <h3><i className="bi bi-flag me-2"></i>{t('aboutMe.objectives')}</h3>
 
                 <p>
                     {t('aboutMe.objectivesText')}

@@ -38,6 +38,8 @@ const NavigationBar = () => {
         // pathParts = ["portafoli","ca","inici"]
 
         const oldLang = pathParts[1] || "ca";
+
+        // Navega a la url equivalent -> Ex : ca/sobre-mi -> en/about-me
         const currentRouteName = pathParts[2] || routesPath[oldLang].home;
 
         let routeKeyFound = "home";

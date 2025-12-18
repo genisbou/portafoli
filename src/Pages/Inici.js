@@ -104,7 +104,7 @@ const Inici = () => {
                     <img src={imgPortfolio}  alt="Imagen de Japón"/>
                     <p></p>
                     <div className="card-body">
-                        <h5 className="card-title"> {t('home.titlePortfolio')}</h5>
+                        <h3 className="card-title"> {t('home.titlePortfolio')}</h3>
                         <p className="card-text">
                             {t('home.descriptionPortfolio')}
                         </p>
@@ -131,7 +131,7 @@ const Inici = () => {
                 <div className="card">
                     <img src={img2} alt="Imagen de Japón"/>
                     <div className="card-body">
-                        <h5 className="card-title"> {t('home.titleAlpicat')}</h5>
+                        <h3 className="card-title"> {t('home.titleAlpicat')}</h3>
                         <p className="card-text">
                             {t('home.descriptionAlpicat')}
                         </p>
@@ -173,7 +173,7 @@ const Inici = () => {
                 <div className="card">
                     <img src={img6} style={{width: '50%'}} alt="Imagen de Japón"/>
                     <div className="card-body">
-                        <h5 className="card-title"> {t('home.titleJava')}</h5>
+                        <h3 className="card-title"> {t('home.titleJava')}</h3>
                         <p className="card-text">
                             {t('home.descriptionJava')}
                         </p>
@@ -202,7 +202,7 @@ const Inici = () => {
                 <div className="card">
                     <img src={img9} style={{width: '75%'}} alt="Imagen de Japón"/>
                     <div className="card-body">
-                        <h5 className="card-title"> {t('home.titleDawguardia')} </h5>
+                        <h3 className="card-title"> {t('home.titleDawguardia')} </h3>
                         <p className="card-text">
                             {t('home.descriptionDawguardia')}
 
