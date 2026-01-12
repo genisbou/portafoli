@@ -78,7 +78,7 @@ const Footer = () => {
                 </div>
 
                 <div className="copyright text-center">
-                    © 2025 Genís Bou Majós. {t('footer.copy')}
+                    © 2026 Genís Bou Majós. {t('footer.copy')}
                 </div>
             </div>
         </footer>
