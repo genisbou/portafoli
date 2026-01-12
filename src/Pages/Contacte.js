@@ -255,13 +255,13 @@ const Inici = () => {
 
                                     <li className="list-group-item">
                                         <i className="bi bi-filetype-pdf" style={{fontSize: "22px"}}> </i>
-                                        <a type="button" className="btn btn-light"
+                                        <a style={{textDecoration: "none"}}
                                            href={Cv}
                                            target="_blank"
                                            rel="noopener noreferrer"
                                            download={"Cv-Genis-es.pdf"}
 
-                                        > <i className="bi bi-file-earmark-person me-2"></i>
+                                        >
                                             {t('home.downloadCv')}
                                         </a>
 
